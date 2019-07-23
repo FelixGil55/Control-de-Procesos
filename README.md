@@ -26,4 +26,6 @@ La ventana del Panel frontal proporciona menús de herramientas y todos los cont
 
 La programación se realiza mediante la selección de controles funcionales en la ventana del Panel frontal, y al seleccionar se agrega un bloque correspondiente en la ventana de Diagrama de Bloques.
 
+![GitHub Logo](image5.PNG)
+
 
