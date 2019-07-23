@@ -16,3 +16,5 @@ Damos click en la opción **File** y enseguida **New VI**
 
 ![GitHub Logo](image2.png)
 
+Cuando abre un nuevo proyecto, se abren dos ventanas, un **Panel frontal** y el **Diagrama de bloques**.
+
