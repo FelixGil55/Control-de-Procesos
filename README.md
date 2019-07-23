@@ -9,4 +9,4 @@ sus símbolos o íconos gráficos son facilmente identificables para inspección
 experiencia en la programación.
 ## *Primeros pasos en LabVIEW*
 Después de la breve introducción ahora empezaremos a trabajar con el software, para este curso se usará LabVIEW 2017, primero se ejecuta el programa y se abrirá una ventana como la siguiente:
-
+![GitHub Logo](image1.PNG)
