@@ -20,7 +20,7 @@ Cuando abre un nuevo proyecto, se abren dos ventanas, un **Panel frontal** y el 
 
 ![GitHub Logo](image3.png)
 
-La ventana del Panel frontal proporciona menús de herramientas y todos los controles necesarios para la aplicación.
+La ventana del Panel frontal proporciona menús de herramientas y todos los controles necesarios para la aplicación, esta emerge dando click derecho dentro de la ventana de Panel frontal.
 
 ![GitHub Logo](image4.png)
 
