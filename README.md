@@ -22,3 +22,5 @@ Cuando abre un nuevo proyecto, se abren dos ventanas, un **Panel frontal** y el 
 
 La ventana del Panel frontal proporciona menús de herramientas y todos los controles necesarios para la aplicación. La programación se realiza mediante la selección de controles funcionales en la ventana del Panel frontal, y al seleccionar se agrega un bloque correspondiente en la ventana de Diagrama de Bloques.
 
+![GitHub Logo](image4.png)
+
