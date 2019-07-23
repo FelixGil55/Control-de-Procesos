@@ -12,6 +12,7 @@ Después de la breve introducción ahora empezaremos a trabajar con el software,
 
 ![GitHub Logo](image1.PNG)
 
-Damos click en la opción **File** y en seguida **New VI** 
+Damos click en la opción **File** y enseguida **New VI** 
 
 ![GitHub Logo](image2.png)
+
