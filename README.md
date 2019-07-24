@@ -22,10 +22,13 @@ Cuando abre un nuevo proyecto, se abren dos ventanas, un **Panel frontal** y el 
 
 La ventana del Panel frontal proporciona menús de herramientas y todos los controles necesarios para la aplicación, esta emerge dando click derecho dentro de la ventana de Panel frontal.
 
-![GitHub Logo](image4.png)
+   ![GitHub Logo](image4.png)
 
 La programación se realiza mediante la selección de controles funcionales en la ventana del Panel frontal, y al seleccionar se agrega un bloque correspondiente en la ventana de Diagrama de Bloques.
 
 ![GitHub Logo](image5.PNG)
+
+Además de los controles funcionales como generadores de señales, botones, pantallas y gráficos, también se proporcionan controles decorativos que solo afectan al panel frontal. Estos permiten que los controles similares se agrupen visualmente y que el Panel frontal se vea similar al equipo real o sea tan detallado como se desee.
+El diagrama de bloques es donde las entradas y salidas de los diversos controles se conectan entre sí. El programa se puede ejecutar, abortar y pausar desde el Panel frontal o el Diagrama de bloques. El diagrama de bloques también proporciona ayudas para la resolución de problemas. La bombilla destacará la ruta de ejecución a medida que se ejecuta el programa. LabVIEW también permite pasar a través o sobre el código y se pueden establecer puntos de parada / observación.
 
 
