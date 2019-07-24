@@ -33,4 +33,8 @@ El diagrama de bloques es donde las entradas y salidas de los diversos controles
 
 ![GitHub Logo](image6.PNG)
 
+Ahora que conocemos los puntos más básicos de LabVIEW podemos comenzar a realizar un programa sencillo para entender mejor el funcionamiento y familiarizarse con LabVIEW.
+
+### *Primer programa*
+
 
