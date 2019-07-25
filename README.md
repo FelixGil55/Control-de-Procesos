@@ -24,7 +24,7 @@ Cuando abre un nuevo proyecto se abren dos ventanas, la primera pantalla que apa
 
 Muchas veces es conveniente organizar las dos ventanas de forma tal que se dividan la pantalla cada una en una mitad para que se facilite el desarrollo del programa. Para lograr dicha distribución LabVIEW dispone de la combinación Ctrl+T. Una vez que se realiza esta acción se obtiene la siguiente distribución:
 
-
+![GitHub Logo](image4n.png)
 
 La ventana del Panel frontal proporciona menús de herramientas y todos los controles necesarios para la aplicación, la ventana de controles emerge dando click derecho dentro de la ventana de Panel frontal y luce de esta forma.
 
