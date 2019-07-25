@@ -14,7 +14,7 @@ Primero se ejecuta el programa y se abrirá una ventana similar a la siguiente:
 ![GitHub Logo](image1.PNG)
 
 En esa pantalla podemos seleccionar varias opciones entre las cuales están la sección de archivos, herramientas y ayuda.
-Para iniciar un nuevo programa damos click en la opción **File** y enseguida **New VI** 
+Para iniciar un nuevo programa damos clic en la opción **File** y enseguida **New VI** 
 
 ![GitHub Logo](image2.png)
 
@@ -26,7 +26,7 @@ Muchas veces es conveniente organizar las dos ventanas de forma tal que se divid
 
 ![GitHub Logo](image4n.PNG)
 
-La ventana del Panel frontal proporciona menús de herramientas y todos los controles necesarios para la aplicación, la ventana de controles emerge dando click derecho dentro de la ventana de Panel frontal y luce de esta forma.
+La ventana del Panel frontal proporciona menús de herramientas y todos los controles necesarios para la aplicación, la ventana de controles emerge dando clic derecho dentro de la ventana de Panel frontal y luce de esta forma.
 
 ![GitHub Logo](image4.png)
 
@@ -44,5 +44,5 @@ El diagrama de bloques también proporciona ayudas para la resolución de proble
 Ahora que conocemos los puntos más básicos de LabVIEW podemos comenzar a realizar un programa sencillo para entender mejor el funcionamiento y familiarizarse con LabVIEW.
 
 ### *Primer programa*
-
+Para la primer práctica se va a realizar un programa que permita hacer una resta de números. Para empezar, abrimos LabVIEW y como vimos anteriormente damos clic en **File** y después en **New VI**.
 
