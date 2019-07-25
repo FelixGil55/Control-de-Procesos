@@ -8,28 +8,36 @@ para crear programas basados en simbolos gráficos. Labview utiliza una terminol
 sus símbolos o íconos gráficos son facilmente identificables para inspección visual. Se puede aprender LabVIEW incluso si se tiene poca 
 experiencia en la programación.
 ## *Primeros pasos en LabVIEW*
-Después de la breve introducción ahora empezaremos a trabajar con el software, para este curso se usará LabVIEW 2017, primero se ejecuta el programa y se abrirá una ventana como la siguiente:
+Después de la breve introducción ahora empezaremos a trabajar con el software, para este curso se usará LabVIEW 2017.
+Primero se ejecuta el programa y se abrirá una ventana similar a la siguiente:
 
 ![GitHub Logo](image1.PNG)
 
-Damos click en la opción **File** y enseguida **New VI** 
+En esa pantalla podemos seleccionar varias opciones entre las cuales están la sección de archivos, herramientas y ayuda.
+Para iniciar un nuevo programa damos click en la opción **File** y enseguida **New VI** 
 
 ![GitHub Logo](image2.png)
 
-Cuando abre un nuevo proyecto, se abren dos ventanas, un **Panel frontal** y el **Diagrama de bloques**.
+Cuando abre un nuevo proyecto se abren dos ventanas, la primera pantalla que aparece es el **Panel frontal** o ventana de diseño de la aplicación mientras que la que aparece en segundo plano es la ventana de **Diagrama de bloques**.
 
 ![GitHub Logo](image3.png)
 
-La ventana del Panel frontal proporciona menús de herramientas y todos los controles necesarios para la aplicación, esta emerge dando click derecho dentro de la ventana de Panel frontal.
+Muchas veces es conveniente organizar las dos ventanas de forma tal que se dividan la pantalla cada una en una mitad para que se facilite el desarrollo del programa. Para lograr dicha distribución LabVIEW dispone de la combinación Ctrl+T. Una vez que se realiza esta acción se obtiene la siguiente distribución:
 
-   ![GitHub Logo](image4.png)
+
+
+La ventana del Panel frontal proporciona menús de herramientas y todos los controles necesarios para la aplicación, la ventana de controles emerge dando click derecho dentro de la ventana de Panel frontal y luce de esta forma.
+
+![GitHub Logo](image4.png)
 
 La programación se realiza mediante la selección de controles funcionales en la ventana del Panel frontal, y al seleccionar se agrega un bloque correspondiente en la ventana de Diagrama de Bloques.
 
 ![GitHub Logo](image5.PNG)
 
 Además de los controles funcionales como generadores de señales, botones, pantallas y gráficos, también se proporcionan controles decorativos que solo afectan al panel frontal. Estos permiten que los controles similares se agrupen visualmente y que el Panel frontal se vea similar al equipo real o sea tan detallado como se desee.
-El diagrama de bloques es donde las entradas y salidas de los diversos controles se conectan entre sí. El programa se puede ejecutar, abortar y pausar desde el Panel frontal o el Diagrama de bloques. El diagrama de bloques también proporciona ayudas para la resolución de problemas. La bombilla destacará la ruta de ejecución a medida que se ejecuta el programa. LabVIEW también permite pasar a través o sobre el código y se pueden establecer puntos de parada / observación.
+El diagrama de bloques es donde las entradas y salidas de los diversos controles se conectan entre sí. El programa se puede ejecutar, abortar y pausar desde el Panel frontal o el Diagrama de bloques.
+
+El diagrama de bloques también proporciona ayudas para la resolución de problemas. La bombilla destacará la ruta de ejecución a medida que se ejecuta el programa. LabVIEW también permite pasar a través o sobre el código y se pueden establecer puntos de parada / observación.
 
 ![GitHub Logo](image6.PNG)
 
