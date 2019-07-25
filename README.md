@@ -18,13 +18,13 @@ Para iniciar un nuevo programa damos click en la opción **File** y enseguida **
 
 ![GitHub Logo](image2.png)
 
-Cuando abre un nuevo proyecto se abren dos ventanas, la primera pantalla que aparece es el **Panel frontal** o ventana de diseño de la aplicación mientras que la que aparece en segundo plano es la ventana de **Diagrama de bloques**.
+Cuando abre un nuevo proyecto emergen dos ventanas, la primera pantalla que aparece es el **Panel frontal** o ventana de diseño de la aplicación mientras que la que aparece en segundo plano es la ventana de **Diagrama de bloques**.
 
 ![GitHub Logo](image3.png)
 
 Muchas veces es conveniente organizar las dos ventanas de forma tal que se dividan la pantalla cada una en una mitad para que se facilite el desarrollo del programa. Para lograr dicha distribución LabVIEW dispone de la combinación Ctrl+T. Una vez que se realiza esta acción se obtiene la siguiente distribución:
 
-![GitHub Logo](image4n.png)
+![GitHub Logo](image4n.PNG)
 
 La ventana del Panel frontal proporciona menús de herramientas y todos los controles necesarios para la aplicación, la ventana de controles emerge dando click derecho dentro de la ventana de Panel frontal y luce de esta forma.
 
