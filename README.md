@@ -3,6 +3,7 @@
 ### *Índice*
 - [Introducción a LabVIEW](#introducción-a-labview).
 - [Primeros pasos en LabVIEW](#primeros-pasos-en-labview).
+- [Primer programa](#primer-programa).
 
 ## *Introducción a LabVIEW*
 LabVIEW es la contracción de las palabras en inglés *"Laboratory Virtual Instrument Engineering Workbench"*, y este es un entorno de programación gráfica usado por ingenieros y cientificos para desarrollar mediciones sofisticadas, pruebas y sistemas de control. LabVIEW puede integrar una gran variedad de dispositivos de hardware.
