@@ -50,11 +50,28 @@ El diagrama de bloques también proporciona ayudas para la resolución de proble
 Ahora que conocemos los puntos más básicos de LabVIEW podemos comenzar a realizar un programa sencillo para entender mejor el funcionamiento y familiarizarse con LabVIEW.
 
 ### *Primer programa*
-Para la primer práctica se va a realizar un programa que permita hacer una suma de números. Para empezar, abrimos LabVIEW y como vimos anteriormente damos clic en **File** y después en **New VI**.
+Para la primer práctica se va a realizar un programa que permita hacer una suma de dos números. Para empezar, abrimos LabVIEW y como vimos anteriormente damos clic en **File** y después en **New VI**.
 Una vez que hemos creado el nuevo VI daremos clic derecho sobre la ventana de Panel frontal para que aparezca la ventana de controles.
 Usted crea el panel frontal con controladores e indicadores, los cuales son las terminales interactivas de entrada y salida del VI, respectivamente. Los controles pueden ser perillas, botones, barras deslizantes y otros dispositivos de entrada. Los indicadores son gráficas, LEDs y otras pantallas. Los controles simulan dispositivos de entrada de instrumentos y suministran datos al diagrama de bloques del VI. Los indicadores simulan dispositivos de salida de instrumentos y muestran los datos que el diagrama de bloques adquiere o genera.
-Para esta práctica podemos usar un control numérico, una perilla o una barra deslizante, ya que estos representan datos numéricos. Para seleccionar alguno basta con acercar el puntero del mouse en la opción que dice Numeric y se abrirá otra ventana con las opciones mencionadas y muchas otras más que después veremos. 
+Para esta práctica podemos usar un control numérico, una perilla o una barra deslizante, ya que estos representan datos numéricos. Para seleccionar alguno basta con acercar el puntero del mouse en la opción que dice **Numeric** y se abrirá otra ventana con las opciones mencionadas y muchas otras más que después veremos. 
 
 ![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image7.png)
 
-Usted puede seleccionar la que más le guste, en este caso usaremos la barra deslizante (Horizontal Pointer Slide), damos clic a la opción elegida y después regresará al Panel frontal, note que la figura de la opción seleccionada aparecerá en líneas punteadas, usted la podrá mover libremente dentro del Panel frontal hasta que encuentre el lugar donde desee fijarla, para esto solo debe dar clic derecho en lugar donde quiera fijarla y la figura del control aparecerá. De igual manera al hacer esto aparecerá un bloque en la ventana de Diagrama de bloques que representa el control colocado en el Panel frontal.
+Usted puede seleccionar la que más le guste, en este caso usaremos la barra deslizante (Horizontal Pointer Slide), damos clic a la opción elegida y después regresará al Panel frontal, note que la figura de la opción seleccionada aparecerá en líneas punteadas, usted la podrá mover libremente dentro del Panel frontal hasta que encuentre el lugar donde desee fijarla, para esto solo debe dar clic derecho en el lugar donde quiera fijarla y la figura del control aparecerá. De igual manera al hacer esto aparecerá un bloque en la ventana de Diagrama de bloques que representa el control colocado en el Panel frontal.
+
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image8.png)
+
+Por default todos los controles aparecerán con un nombre preestablecido, si desea cambiar el nombre de la barra o del control que usted coloco solo debe dar doble clic en el nombre preestablecido (en este caso donde dice Slide) y colocar el nombre que usted desee, note que al cambiar el nombre en el Panel frontal también cambiara en la ventana de Diagrama de bloques.
+
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image9.png)
+
+Como se sumarán dos números necesitaremos colocar otra barra, esto lo hacemos de la misma forma que la anterior.
+Ya que ambas barras están listas ahora necesitaremos un indicador para que nos muestre el resultado de la suma, para ello nuevamente vamos a la ventana de controles y después en Numeric seleccionamos la opción **Numeric Indicator**, la fijamos en el Panel frontal y le cambiamos el nombre. Si todo va bien deberá tener un resultado similar a este: 
+
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image9.png)
+
+
+
+
+
+
