@@ -17,7 +17,7 @@ experiencia en la programación.
 Después de la breve introducción ahora empezaremos a trabajar con el software, para este curso se usará LabVIEW 2017.
 Primero se ejecuta el programa y se abrirá una ventana similar a la siguiente:
 
-![GitHub Logo](image1.PNG)
+![GitHub Logo](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Cursolabview%20images/image1.PNG)
 
 En esa pantalla podemos seleccionar varias opciones entre las cuales están la sección de archivos, herramientas y ayuda.
 Para iniciar un nuevo programa damos clic en la opción **File** y enseguida **New VI** 
