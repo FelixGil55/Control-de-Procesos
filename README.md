@@ -50,5 +50,9 @@ El diagrama de bloques también proporciona ayudas para la resolución de proble
 Ahora que conocemos los puntos más básicos de LabVIEW podemos comenzar a realizar un programa sencillo para entender mejor el funcionamiento y familiarizarse con LabVIEW.
 
 ### *Primer programa*
-Para la primer práctica se va a realizar un programa que permita hacer una resta de números. Para empezar, abrimos LabVIEW y como vimos anteriormente damos clic en **File** y después en **New VI**.
+Para la primer práctica se va a realizar un programa que permita hacer una suma de números. Para empezar, abrimos LabVIEW y como vimos anteriormente damos clic en **File** y después en **New VI**.
+Una vez que hemos creado el nuevo VI daremos clic derecho sobre la ventana de Panel frontal para que aparezca la ventana de controles. Usted crea el panel frontal con controladores e indicadores, los cuales son las terminales interactivas de entrada y salida del VI, respectivamente. Los controles pueden ser perillas, botones, barras deslizantes y otros dispositivos de entrada. Los indicadores son gráficas, LEDs y otras pantallas. Los controles simulan dispositivos de entrada de instrumentos y suministran datos al diagrama de bloques del VI. Los indicadores simulan dispositivos de salida de instrumentos y muestran los datos que el diagrama de bloques adquiere o genera.
+Para esta práctica podemos usar un indicador numérico, una perilla o una barra deslizante, ya que estos representan datos numéricos. Para seleccionar alguno solo debemos dar clic en la opción que dice Numeric y se abrirá otra ventana con las opciones mencionadas y muchas otras más que después veremos. 
+
+
 
