@@ -70,6 +70,18 @@ Ya que ambas barras están listas ahora necesitaremos un indicador para que nos 
 
 ![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image10.png)
 
+Los objetos en la ventana del panel frontal aparecen como terminales en el diagrama de bloques. Las terminales son puertos de entrada y salida que intercambian información entre el panel frontal y diagrama de bloques. Son análogos a parámetros y constantes en lenguajes de programación basados en texto. Los tipos de terminales incluyen terminales de control o indicador y terminales de nodo. Las terminales de control e indicador pertenecen a los controles e indicadores del panel frontal.  Los nodos son objetos en el diagrama de bloques que tienen entradas y/o salidas y realizan operaciones cuando el VI se ejecuta. Son análogos a instrucciones, operaciones, funciones y sub rutinas en lenguajes de programación basados en texto. Los nodos pueden ser funciones, subVIs, Express VIs o estructuras. Las estructuras son elementos de control de procesos, como Estructuras de Casos, Ciclos For o Ciclos While. 
+Para poder realizar la practica necesitaremos usar un nodo que nos proporcione la opción de suma, para localizar este nodo daremos clic derecho en la ventana de Diagrama de bloques y se abrirá una nueva ventana llamada **Functions**. La paleta de Funciones contiene los VIs, funciones y constantes que usted utiliza para crear el diagrama de bloques. La paleta de Funciones está dividida en varias categorías; usted puede mostrar y esconder categorías para cumplir con sus necesidades.
+
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image11.png)
+
+Ya que ha aparecido la ventana acercamos el puntero del mouse a la opción que dice **Numeric**, se abrirá una nueva ventana con varias funciones, para este caso necesitamos la de suma que aparece en la paleta de funciones como **Add**.
+
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image12.png)
+
+
+
+
 
 
 
