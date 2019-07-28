@@ -87,9 +87,13 @@ De esta forma el programa ya puede funcionar, para ejecutarlo tenemos dos opcion
 
 ![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image14.png)
 
+Para facilitar la visualización de los números que deseemos sumar podemos agregar un display a las barras deslizantes, esto se logra dando clic derecho sobre la barra y en la primer opción **Visible items** damos clic y luego en display. 
+
+
+
 Al dar clic en el icono de correr continuamente el programa empieza a trabajar y podemos ver que funciona correctamente haciendo varias pruebas.
 
-
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image15.png)
 
 
 
