@@ -98,11 +98,11 @@ Al dar clic en el icono de correr continuamente el programa empieza a trabajar y
 
 Por ultimo solo queda guardar el archivo, para esto damos clic en **File** y después en **Save As…**
 
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image16.png)
 
+Aparecerá una ventana y le damos un nombre al archivo, solo damos clic en **OK** y listo.
 
-Aparecerá una ventana y le damos un nombre al archivo, solo damos clic en guardar y listo.
-
-
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image17.PNG)
 
 ### *Segundo programa*
 Para la segunda practica vamos a realizar un programa que nos muestre el índice de masa corporal de una persona.
