@@ -79,6 +79,16 @@ Ya que ha aparecido la ventana acercamos el puntero del mouse a la opción que d
 
 ![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image12.png)
 
+Seleccionamos el nodo de suma y después solo la fijamos en la ventana de Diagrama de bloques, este nodo cuenta con dos entradas y una salida, las entras se conectarán con los bloques de control numérico y la salida se conectará al bloque de indicador numérico, el resultado debería quedar similar a este: 
+
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image13.PNG)
+
+De esta forma el programa ya puede funcionar, para ejecutarlo tenemos dos opciones, una es dar clic en **Run** y la otra es dar clic en **Run Continuously**, si elegimos la primer opción el programa se ejecutará una sola vez y se detendrá, por el contrario al elegir la segunda opción el programa seguirá corriendo hasta que le demos clic al botón de paro **Abort Execution**, esto funciona tanto en la ventana del Panel frontal como en la de Diagrama de bloques. 
+
+
+
+
+
 
 
 
