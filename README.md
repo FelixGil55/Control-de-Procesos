@@ -151,8 +151,6 @@ El resultado debe ser similar a este:
 
 Ahora que la parte del Panel frontal esta lista pasamos a trabajar en el Diagrama de boques, hasta donde nos quedamos la ventana lucía así:
 
-Hasta donde nos quedamos la ventana lucía así 
-
 ![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image26.PNG)
 
 Ahora colocamos un While y analizamos la ecuación para hacer las conexiones adecuadas. Primero sabemos que hay que dividir los kilogramos entre la altura, por lo tanto, necesitaremos un nodo de división, después la altura sabemos que debe ir al cuadrado, entonces necesitaremos un nodo que nos permita elevar al cuadrado la altura, pero al tener dos bloques de altura (uno que cuenta los metros y el otro los centímetros) necesitamos un nodo que nos permita sumar los dos valores, entonces ahora sabemos los nodos que necesitamos para realizar las conexiones. Para encontrar estos nodos damos clic derecho en la ventana de Diagrama de bloques y después en la ventana que emerge llamada Functions damos clic en Numeric, dentro de este menú se encuentran todos los nodos que necesitamos. 
@@ -171,7 +169,7 @@ La seleccionamos y a esta le damos el valor de 100, ahora solo queda realizar la
 
 ![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image30.PNG)
 
-Por ultimo solo que conectar la salida del nodo de división al bloque de la barra deslizante, aquí podemos notar que este bloque solo cuenta con una salida pero no con una entrada, esto lo arreglamos dando clic derecho sobre el bloque y en el menú que despliega le damos clic a la opción **Change to Indicator**, haciendo pasa a ser un indicador y por lo tanto cambiara la salida que tenía por una entrada.
+Por ultimo solo queda conectar la salida del nodo de división al bloque de la barra deslizante, aquí podemos notar que este bloque solo cuenta con una salida pero no con una entrada, esto lo arreglamos dando clic derecho sobre el bloque y en el menú que despliega le damos clic a la opción **Change to Indicator**, haciendo pasa a ser un indicador y por lo tanto cambiara la salida que tenía por una entrada.
 
 ![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image31.png)
 
