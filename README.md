@@ -115,12 +115,12 @@ Una medida de la obesidad se determina mediante el índice de masa corporal (IMC
 | Sobrepeso | 25.0 – 29.9 |
 | Obesidad | Más de 30.0 |
 
-Para empezar, ejecutamos LabVIEW y abrimos un nuevo VI, al igual que en el programa anterior necesitaremos controles numéricos y un indicador numérico para mostrar el resultado, colocaremos tres controles numéricos y en esta práctica usaremos una barra deslizante como indicador, pero en esta ocasión será una vertical, podemos encontrarla con el nombre de ** Vertical Pointer Slide** (esta se encuentra en el mismo menú que la barra deslizante horizontal que usamos en la primer practica), recordemos que damos clic derecho en la ventana de Panel frontal para que aparezca la ventana de controles y después damos clic en **Numeric** dentro de este menú podemos encontrarla. 
+Para empezar, ejecutamos LabVIEW y abrimos un nuevo VI, al igual que en el programa anterior necesitaremos controles numéricos y un indicador numérico para mostrar el resultado, colocaremos tres controles numéricos y en esta práctica usaremos una barra deslizante como indicador, pero en esta ocasión será una vertical, podemos encontrarla con el nombre de **Vertical Pointer Slide** (esta se encuentra en el mismo menú que la barra deslizante horizontal que usamos en la primer practica), recordemos que damos clic derecho en la ventana de Panel frontal para que aparezca la ventana de controles y después damos clic en **Numeric** dentro de este menú podemos encontrarla. 
 Hasta ahora debería tener un resultado similar a este: 
 
 ![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image18.png)
 
-Ya que hemos llegado a este punto ahora cambiamos los nombres de cada control numérico y de la barra deslizante, esto para que sepamos exactamente en qué control ira cada dato para el cálculo del IMC, recordando la formula esta nos pide la estatura de la persona y su peso en Kilogramos, entonces a un control le cambiaremos el nombre a *Peso [Kg]*, la otra a *Altura [m]* y la última a *Altura [cm]*. A la barra deslízate le cambiamos el nombre a IMC ya que aquí se mostrará el resultado. Entonces hasta aquí el programa debería lucir similar a este:
+Ya que hemos llegado a este punto ahora cambiamos los nombres de cada control numérico y de la barra deslizante, esto para que sepamos exactamente en qué control ira cada dato para el cálculo del IMC, recordando la formula esta nos pide la estatura de la persona y su peso en Kilogramos, entonces a un control le cambiaremos el nombre a *Peso [Kg]*, la otra a *Altura [m]* y la última a *Altura [cm]*. A la barra deslizante le cambiamos el nombre a IMC ya que aquí se mostrará el resultado. Entonces hasta aquí el programa debería lucir similar a este:
 
 ![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image19.png)
 
@@ -134,19 +134,19 @@ Hasta ahora el programa debería verse de esta forma:
 
 Seguimos trabajando en el Panel frontal, esta vez usaremos la opción de **Adornos**, esto para colocar líneas en los límites de cada estado de la masa corporal y poder visualizar dentro del Panel frontal en qué situación se encuentra cada persona que ingrese sus datos al programa. Damos clic derecho en el Panel frontal y después en el menú de controles acercamos el puntero a la opción **Decorations** para que despliegue un submenú y elegimos una de las opciones de línea.
 
-Imagen 22
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image22.png)
 
 Ya que elegimos una opción de línea colocamos una en cada valor correspondiente a la tabla para separar cada estado del IMC, y después escribiremos en cada nivel el estado en que se encuentra, para escribir solo damos doble clic en el lugar donde queremos escribir dentro del Panel frontal y escribimos el estado según los valores que tenemos, debería quedar similar a esto: 
 
-Imagen23
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image23.PNG)
 
 Por ultimo eliminaremos las flechas de incremento y decremento de los controles para que se vea más presentable nuestro programa, esto es opcional, pero de hacerlo solo damos clic derecho sobre un control, en el menú que aparece llamado **Visible Items** damos clic y después damos clic a la opción **Increment/Decrement** para quitarlo, lo mismo con todos los controles
 
-Image24
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image24.png)
 
 El resultado debe ser similar a este: 
 
-Image25
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image25.PNG)
 
 Ahora que la parte del Panel frontal esta lista pasamos a trabajar en el Diagrama de boques, hasta ahora debe lucir así la ventana: 
 
