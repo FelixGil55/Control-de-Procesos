@@ -153,35 +153,35 @@ Ahora que la parte del Panel frontal esta lista pasamos a trabajar en el Diagram
 
 Hasta donde nos quedamos la ventana lucía así 
 
-Image26
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image26.PNG)
 
 Ahora colocamos un While y analizamos la ecuación para hacer las conexiones adecuadas. Primero sabemos que hay que dividir los kilogramos entre la altura, por lo tanto, necesitaremos un nodo de división, después la altura sabemos que debe ir al cuadrado, entonces necesitaremos un nodo que nos permita elevar al cuadrado la altura, pero al tener dos bloques de altura (uno que cuenta los metros y el otro los centímetros) necesitamos un nodo que nos permita sumar los dos valores, entonces ahora sabemos los nodos que necesitamos para realizar las conexiones. Para encontrar estos nodos damos clic derecho en la ventana de Diagrama de bloques y después en la ventana que emerge llamada Functions damos clic en Numeric, dentro de este menú se encuentran todos los nodos que necesitamos. 
 
-Image27
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image27.png)
 
 Colocamos los nodos dentro del ciclo While y ahora el diagrama de bloques debe lucir algo así:
 
-Image28 
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image28.PNG)
 
 Hay que tener cuidado con la parte de la suma de la altura ya que si hacemos la suma directa tendremos un error en el resultado, esto es porque los centímetros los tomaría como si de metros se trataran, para evitar este error debemos dividir la cantidad que se coloque en centímetros entre 100 para tener un valor de altura correcto, si por ejemplo alguien que mida 1.70m ingresa sus datos el programa tomaría la información como si fueran 170m dando un grave error como resultado, para ello es la división, de esta forma el resultado será el correcto. Para poder dividir colocaremos una constante, esto lo hacemos entrando a la paleta de funciones después en Numeric y dentro de este se encuentra la opción llamada **DBL Numeric Constant**
 
-Image29
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image29.png)
 
 La seleccionamos y a esta le damos el valor de 100, ahora solo queda realizar las conexiones, como sabemos el peso debe dividir a la altura por lo tanto conectamos la salida de peso a la entrada de división, pasando a la altura realizamos la conexión de la suma de metros con centímetros, para ello conectamos las salidas de ambos bloques a las entradas del nodo de suma, según la ecuación la altura debe de elevarse al cuadrado, por lo tanto la salida del nodo de suma se conectara a la entrada del nodo de cuadrado y este último arrojara el valor final de la altura, entonces conectamos la salida del nodo de cuadrado a la entrada del nodo de división. El resultado de las conexiones debe quedar así:
 
-Image30
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image30.PNG)
 
 Por ultimo solo que conectar la salida del nodo de división al bloque de la barra deslizante, aquí podemos notar que este bloque solo cuenta con una salida pero no con una entrada, esto lo arreglamos dando clic derecho sobre el bloque y en el menú que despliega le damos clic a la opción **Change to Indicator**, haciendo pasa a ser un indicador y por lo tanto cambiara la salida que tenía por una entrada.
 
-Image31
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image31.png)
 
 Ahora solo conectamos la salida del nodo que queda a la entrada del bloque y está casi listo, para terminar este ejercicio debemos colocar un botón de paro, esto lo podemos hacer dando clic derecho sobre el punto rojo que está en la parte inferior derecha, después damos clic en la opción **Create Control**, y aparecerá un nuevo bloque, de igual forma aparecerá uno en el Panel frontal y este servirá para detener el programa. 
 
-Image32
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image32.png)
 
 En el Panel frontal acomodamos el nuevo control donde mejor nos parezca y ya solo queda probar el programa, lo corremos e ingresamos nuestros datos.
 
-Image33
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image33.PNG)
 
 Puede corroborar el resultado en internet para que vea que el programa funciona correctamente.
 
