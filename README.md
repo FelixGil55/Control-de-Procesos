@@ -100,12 +100,41 @@ Por ultimo solo queda guardar el archivo, para esto damos clic en **File** y des
 
 ![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image16.png)
 
-Aparecerá una ventana y le damos un nombre al archivo, solo damos clic en **OK** y listo.
+Aparecerá una ventana y le damos un nombre al archivo, solo damos clic en **OK** y listo, el primer programa ha concluido. 
 
 ![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image17.PNG)
 
 ### *Segundo programa*
 Para la segunda practica vamos a realizar un programa que nos muestre el índice de masa corporal de una persona.
+Una medida de la obesidad se determina mediante el índice de masa corporal (IMC), que se calcula dividiendo los kilogramos de peso por el cuadrado de la estatura en metros (IMC = peso [kg]/ estatura [m2]). Usando la siguiente tabla nos apoyaremos para saber en qué estado se encuentra la persona que ingrese sus datos en el programa.
+
+| Composición corporal| Índice de masa corporal (IMC)|
+| ----- | ---- |
+| Bajo de peso | Menos de 18.5 |
+| Normal | 18.5 – 24.9|
+| Sobrepeso | 25.0 – 29.9 |
+| Obesidad | Más de 30.0 |
+
+Para empezar, ejecutamos LabVIEW y abrimos un nuevo VI, al igual que en el programa anterior necesitaremos controles numéricos y un indicador numérico para mostrar el resultado, colocaremos tres controles numéricos y en esta práctica usaremos una barra deslizante como indicador, pero en esta ocasión será una vertical, podemos encontrarla con el nombre de ** Vertical Pointer Slide** (esta se encuentra en el mismo menú que la barra deslizante horizontal que usamos en la primer practica), recordemos que damos clic derecho en la ventana de Panel frontal para que aparezca la ventana de controles y después damos clic en **Numeric** dentro de este menú podemos encontrarla. 
+Hasta ahora debería tener un resultado similar a este: 
+
+image18
+
+Ya que hemos llegado a este punto ahora cambiamos los nombres de cada control numérico y de la barra deslizante, esto para que sepamos exactamente en qué control ira cada dato para el cálculo del IMC, recordando la formula esta nos pide la estatura de la persona y su peso en Kilogramos, entonces a un control le cambiaremos el nombre a *Peso [Kg]*, la otra a *Altura [m]* y la última a *Altura [cm]*. A la barra deslízate le cambiamos el nombre a IMC ya que aquí se mostrará el resultado. Entonces hasta aquí el programa debería lucir similar a este:
+
+image19
+
+Como los valores según la tabla anterior van de 0 a 30 entonces cambiaremos los valores de la barra deslizante para que esta concuerde, para cambiar los valores es similar a cuando cambiamos los nombres de los controles, solo damos doble clic sobre el valor inferior y el valor superior y colocamos los valores que queremos.  Ahora para que podamos visualizar el valor exacto que genere el programa podemos colocar un display a la barra deslizante, damos clic derecho y en la primera opción del menú que aparece **Visible Items** damos clic y después en **Digital Display**
+
+Image20
+
+Hasta ahora el programa debería verse de esta forma:
+
+Image21
+
+
+
+
 
 
 
