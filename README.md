@@ -104,22 +104,21 @@ El Ciclo While está ubicado en la paleta Structures. Seleccione el Ciclo While 
 
 Cuando suelte el botón del mouse, un borde del Ciclo While encierra la sección que seleccionó.
 
-image
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/while2.PNG)
 
 Ahora nuestro programa está condicionado y para detenerlo dentro del mismo programa podemos colocar un botón de **Stop**, este se encuentra dentro del menú de controles en el submenú **Boolean**
 
-Image
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/while3.png)
 
 Seleccionamos el botón y lo acomodamos dentro del Panel frontal, ahora tenemos el programa de esta forma:
 
-Iamge
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/while4.png)
 
 Por ultimo solo hacemos la conexión del bloque que representa el Stop con el punto rojo que tiene al lado para que al presiónalo en el Panel frontal el programa se detenga. 
 
-Imagen
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/while5.png)
 
 Ahora podemos correr el programa de la misma forma que el anterior pero esta vez al dar clic en el botón de Stop del Panel frontal nuestro programa se detendrá.
-
 
 
 Por ultimo solo queda guardar el archivo, para esto damos clic en **File** y después en **Save As…**
