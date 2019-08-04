@@ -97,6 +97,31 @@ Al dar clic en el icono de correr continuamente el programa empieza a trabajar y
 
 ![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image15.png)
 
+Como vimos el programa ya funciona correctamente, sin embargo, podemos agregar un ciclo **While** en la ventana de Diagrama de bloques. Similar a un Ciclo Do o a un Ciclo Repeat-Until en lenguajes de programación basados en texto, un Ciclo While en LabVIEW ejecuta el código que contiene hasta que ocurre una condición.
+El Ciclo While está ubicado en la paleta Structures. Seleccione el Ciclo While en la paleta y después use el cursor para arrastrar una selección rectangular alrededor de la sección del diagrama de bloques que desea repetir.
+
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/while.png)
+
+Cuando suelte el botón del mouse, un borde del Ciclo While encierra la sección que seleccionó.
+
+image
+
+Ahora nuestro programa está condicionado y para detenerlo dentro del mismo programa podemos colocar un botón de **Stop**, este se encuentra dentro del menú de controles en el submenú **Boolean**
+
+Image
+
+Seleccionamos el botón y lo acomodamos dentro del Panel frontal, ahora tenemos el programa de esta forma:
+
+Iamge
+
+Por ultimo solo hacemos la conexión del bloque que representa el Stop con el punto rojo que tiene al lado para que al presiónalo en el Panel frontal el programa se detenga. 
+
+Imagen
+
+Ahora podemos correr el programa de la misma forma que el anterior pero esta vez al dar clic en el botón de Stop del Panel frontal nuestro programa se detendrá.
+
+
+
 Por ultimo solo queda guardar el archivo, para esto damos clic en **File** y después en **Save As…**
 
 ![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image16.png)
