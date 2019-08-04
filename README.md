@@ -5,6 +5,7 @@
 - [Primeros pasos en LabVIEW](#primeros-pasos-en-labview).
 - [Primer programa](#primer-programa).
 - [Segundo programa](#segundo-programa).
+- [Instalación del software NI VISA y del toolkit LINX](#instalación-del-software-ni-visa-y-del-toolkit-linx).
 - [Tercer programa](#tercer-programa).
 
 ## *Introducción a LabVIEW*
@@ -208,6 +209,76 @@ En el Panel frontal acomodamos el nuevo control donde mejor nos parezca y ya sol
 ![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image33.PNG)
 
 Puede corroborar el resultado en internet para que vea que el programa funciona correctamente.
+
+## *Instalación del software NI VISA y del toolkit LINX*
+
+Para las siguientes practicas se utilizará comunicación serial con **Arduino**, por lo cual es necesario instalar el software controlador **NI-VISA** que proporciona la interfaz de programación entre el hardware (Arduino) y el entorno de desarrollo de aplicaciones LabVIEW, y el toolkit **LINX** de Digilent/LabVIEW MakerHub.**LINX**, es una herramienta de fuente abierta de Digilent y diseñada para facilitar el uso y desarrollo de aplicaciones embebidas usando LabVIEW. **LINX** incluye VI's ejemplares sobre los sensores embebidos más comunes, así como aplicaciones de programación de hardware agnóstico para tener acceso a periféricos como Entradas/Salidas digitales, Entradas/Salidas analógicas, PWM, I2C, SPI y UART. Ya sea que esté controlando por un hardware remoto como un chipKIT o Arduino por USB/Serial, Ethernet o Wi-Fi o implementando VI's para ejecutar en plataformas como Raspberry Pi 2/3, **LINX** y LabVIEW hacen más sencilla la visualización de los datos con los que está trabajando, depurando su código y creando aplicaciones embebidas avanzadas de manera rápida.
+Para instalar todo lo necesario para las siguientes practicas siga los siguientes pasos:
+
+#### *Instalación del Software NI-VISA*
+
+Una vez instalado el software LabVIEW se debe instalar el software controlador NI-VISA para permitir la comunicación con el sistema embebido Arduino, para esto se descarga de forma gratuita el software directamente de la página oficial de National Instruments a través de una cuenta personal creada por el usuario. La versión del software controlador depende de la versión del software LabVIEW que se esté utilizando, en el siguiente [enlace]( http://www.ni.com/es-mx/support/downloads/drivers/download.ni-visa.html#305862) podrá encontrar el que se adecue a su versión.
+
+Descargue y ejecute el archivo autoextraíble. Para instalar NI-VISA y todos los archivos necesarios del controlador debe seguir los siguientes pasos:
+1. Ejecutar el archivo autoextraíble.
+
+image34
+
+2. Seleccionar la carpeta de destino de instalación en el disco local C.
+
+image35
+
+3. Seleccionar la opción para recibir notificaciones software NI-VISA para facilitar actualizaciones (este paso es opcional si no desea recibir notificaciones sobre actualizaciones).
+
+image36
+
+4. A continuación, se visualizan todos los archivos que se instalaran en el controlador.
+
+image37
+
+5. Se procede a aceptar el contrato de licencia.
+
+image38
+
+6. Para que Windows no interrumpa el proceso de instalación, seleccionar el check-box correspondiente al acuerdo de confianza que hace referencia a la instalación de softwares provenientes de National Instruments Corporation.
+
+image39
+
+7. Se procede a aceptar el proceso de instalación del software NI-VISA y sus controladores.
+
+image40
+
+8. Una vez terminado el proceso de instalación se procede a reiniciar el equipo y listo, tendrá instalado NI-VISA en su equipo.
+
+image41
+
+#### *Instalación del toolkit LINX*
+
+Para obtener este toolkit primero debemos ir al siguiente [enlace](http://sine.ni.com/nips/cds/view/p/lang/es/nid/212478) el cual nos dirigirá a la página de National Instruments, como se ve en la imagen damos clic en recursos y después en descargar.
+
+image42
+
+Después le pedirán crear una cuenta o si ya tiene una ingresar para poder descargar, una vez que ha ingresado da clic en Download Toolkit, y después en Abrir VIPMHelper.
+
+image43
+
+Se abrirá una ventana como esta: 
+
+image44
+
+A continuación, se procede a realizar la instalación del toolkit LINX, podemos cambiar la versión de LabVIEW que se muestra si es necesario y después damos clic en el botón Install
+
+image45
+
+Como siguiente paso, se procede aceptar los acuerdos de licencia del toolkit LINX de Digilent.
+
+image46
+
+Una vez aceptados los acuerdos de licencia, automáticamente se inicia la instalación del toolkit LINX de Digilent. Para finalizar la instalación se procede a dar clic en el botón Finish.
+
+image47
+
+Si todo salió bien ahora tenemos todo lo neceario para conectar LabVIEW con Arduino y empezar las siguientes practicas.
 
 ### *Tercer programa*
 
