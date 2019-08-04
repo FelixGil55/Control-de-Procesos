@@ -9,6 +9,7 @@
 - [Tercer programa](#tercer-programa).
 
 ## *Introducción a LabVIEW*
+-[Índice](#índice).
 LabVIEW es la contracción de las palabras en inglés *"Laboratory Virtual Instrument Engineering Workbench"*, y este es un entorno de programación gráfica usado por ingenieros y cientificos para desarrollar mediciones sofisticadas, pruebas y sistemas de control. LabVIEW puede integrar una gran variedad de dispositivos de hardware.
 En este curso utilizaremos el hardware de comunicación serial y el DAQ (Data Adquisition) configurando el hardware en el MAX (Mesurement & Automation Explorer). Usted puede descargar la versión de LabVIEW estudiantil para Windows o para MAC, por lo que no necesita comprar el software. LabVIEW es un software de desarrollo gráfico y flexible creado por National Instruments, una compañía que crea productos de hardware y software que le permiten a las computadoras a ayudar a ingenieros y científicos a tomar mediciones, controlar procesos, analizar y guardar datos. National Instruments fue fundado hace 39 años en Texas a partir de personas que laboraban en la Universidad de Texas. Científicos e ingenieros en investigación, desarrollo, producción, pruebas e industrias de servicio como los semiconductores, automotriz, aeroespacial, electrónica, química, comunicaciones y farmacéutica han usado y continúan usando LabVIEW para desarrollar su trabajo. Por ejemplo SpaceX utiliza LabVIEW para llevar los cohetes Falcon 9 al espacio.
 ### *Instrumentos Virtuales*
@@ -54,7 +55,8 @@ Si usted desea aprender más sobre el uso de las funciones y de los controles en
 
 Ahora que conocemos los puntos más básicos de LabVIEW podemos comenzar a realizar un programa sencillo para entender mejor el funcionamiento y familiarizarse con LabVIEW.
 
-### *Primer programa*
+## *Primer programa*
+-[Índice](#índice).
 Para la primer práctica se va a realizar un programa que permita hacer una suma de dos números. Para empezar, abrimos LabVIEW y como vimos anteriormente damos clic en **File** y después en **New VI**.
 Una vez que hemos creado el nuevo VI daremos clic derecho sobre la ventana de Panel frontal para que aparezca la ventana de controles.
 Usted crea el panel frontal con controladores e indicadores, los cuales son las terminales interactivas de entrada y salida del VI, respectivamente. Los controles pueden ser perillas, botones, barras deslizantes y otros dispositivos de entrada. Los indicadores son gráficas, LEDs y otras pantallas. Los controles simulan dispositivos de entrada de instrumentos y suministran datos al diagrama de bloques del VI. Los indicadores simulan dispositivos de salida de instrumentos y muestran los datos que el diagrama de bloques adquiere o genera.
@@ -132,7 +134,8 @@ Aparecerá una ventana y le damos un nombre al archivo, solo damos clic en **OK*
 
 ![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image17.PNG)
 
-### *Segundo programa*
+## *Segundo programa*
+-[Índice](#índice).
 Para la segunda practica vamos a realizar un programa que nos muestre el índice de masa corporal de una persona.
 Una medida de la obesidad se determina mediante el índice de masa corporal (IMC), que se calcula dividiendo los kilogramos de peso por el cuadrado de la estatura en metros (IMC = peso [kg]/ estatura [m2]). Usando la siguiente tabla nos apoyaremos para saber en qué estado se encuentra la persona que ingrese sus datos en el programa.
 
@@ -211,11 +214,12 @@ En el Panel frontal acomodamos el nuevo control donde mejor nos parezca y ya sol
 Puede corroborar el resultado en internet para que vea que el programa funciona correctamente.
 
 ## *Instalación del software NI VISA y del toolkit LINX*
+-[Índice](#índice).
 
 Para las siguientes practicas se utilizará comunicación serial con **Arduino**, por lo cual es necesario instalar el software controlador **NI-VISA** que proporciona la interfaz de programación entre el hardware (Arduino) y el entorno de desarrollo de aplicaciones LabVIEW, y el toolkit **LINX** de Digilent/LabVIEW MakerHub.**LINX**, es una herramienta de fuente abierta de Digilent y diseñada para facilitar el uso y desarrollo de aplicaciones embebidas usando LabVIEW. **LINX** incluye VI's ejemplares sobre los sensores embebidos más comunes, así como aplicaciones de programación de hardware agnóstico para tener acceso a periféricos como Entradas/Salidas digitales, Entradas/Salidas analógicas, PWM, I2C, SPI y UART. Ya sea que esté controlando por un hardware remoto como un chipKIT o Arduino por USB/Serial, Ethernet o Wi-Fi o implementando VI's para ejecutar en plataformas como Raspberry Pi 2/3, **LINX** y LabVIEW hacen más sencilla la visualización de los datos con los que está trabajando, depurando su código y creando aplicaciones embebidas avanzadas de manera rápida.
 Para instalar todo lo necesario para las siguientes practicas siga los siguientes pasos:
 
-#### *Instalación del Software NI-VISA*
+### *Instalación del Software NI-VISA*
 
 Una vez instalado el software LabVIEW se debe instalar el software controlador NI-VISA para permitir la comunicación con el sistema embebido Arduino, para esto se descarga de forma gratuita el software directamente de la página oficial de National Instruments a través de una cuenta personal creada por el usuario. La versión del software controlador depende de la versión del software LabVIEW que se esté utilizando, en el siguiente [enlace]( http://www.ni.com/es-mx/support/downloads/drivers/download.ni-visa.html#305862) podrá encontrar el que se adecue a su versión.
 
@@ -252,7 +256,7 @@ Descargue y ejecute el archivo autoextraíble. Para instalar NI-VISA y todos los
 
 ![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image41.PNG)
 
-#### *Instalación del toolkit LINX*
+### *Instalación del toolkit LINX*
 
 Para obtener este toolkit primero debemos ir al siguiente [enlace](http://sine.ni.com/nips/cds/view/p/lang/es/nid/212478) el cual nos dirigirá a la página de National Instruments, como se ve en la imagen damos clic en recursos y después en descargar.
 
@@ -280,7 +284,8 @@ Una vez aceptados los acuerdos de licencia, automáticamente se inicia la instal
 
 Si todo salió bien ahora tenemos todo lo neceario para conectar LabVIEW con Arduino y empezar las siguientes practicas.
 
-### *Tercer programa*
+## *Tercer programa*
+-[Índice](#índice).
 
 
 
