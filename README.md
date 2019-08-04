@@ -49,6 +49,8 @@ El diagrama de bloques también proporciona ayudas para la resolución de proble
 
 ![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image6.PNG)
 
+Si usted desea aprender más sobre el uso de las funciones y de los controles en LabVIEW le dejo un [Enlace](http://www.ni.com/getting-started/labview-basics/esa/) que lo enviará a la página de National Instruments en la cual podrá encontrar un manual técnico que lo introduce a los conceptos requeridos para desarrollar un sistema básico con LabVIEW.
+
 Ahora que conocemos los puntos más básicos de LabVIEW podemos comenzar a realizar un programa sencillo para entender mejor el funcionamiento y familiarizarse con LabVIEW.
 
 ### *Primer programa*
@@ -116,7 +118,7 @@ Seleccionamos el botón y lo acomodamos dentro del Panel frontal, ahora tenemos 
 
 Por ultimo solo hacemos la conexión del bloque que representa el Stop con el punto rojo que tiene al lado para que al presiónalo en el Panel frontal el programa se detenga. 
 
-![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/while5.png)
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/while5.PNG)
 
 Ahora podemos correr el programa de la misma forma que el anterior pero esta vez al dar clic en el botón de Stop del Panel frontal nuestro programa se detendrá.
 
