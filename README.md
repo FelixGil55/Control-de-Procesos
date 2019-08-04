@@ -222,61 +222,61 @@ Una vez instalado el software LabVIEW se debe instalar el software controlador N
 Descargue y ejecute el archivo autoextraíble. Para instalar NI-VISA y todos los archivos necesarios del controlador debe seguir los siguientes pasos:
 1. Ejecutar el archivo autoextraíble.
 
-image34
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image34.PNG)
 
 2. Seleccionar la carpeta de destino de instalación en el disco local C.
 
-image35
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image35.PNG)
 
 3. Seleccionar la opción para recibir notificaciones software NI-VISA para facilitar actualizaciones (este paso es opcional si no desea recibir notificaciones sobre actualizaciones).
 
-image36
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image36.PNG)
 
 4. A continuación, se visualizan todos los archivos que se instalaran en el controlador.
 
-image37
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image37.PNG)
 
 5. Se procede a aceptar el contrato de licencia.
 
-image38
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image38.PNG)
 
 6. Para que Windows no interrumpa el proceso de instalación, seleccionar el check-box correspondiente al acuerdo de confianza que hace referencia a la instalación de softwares provenientes de National Instruments Corporation.
 
-image39
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image39.PNG)
 
 7. Se procede a aceptar el proceso de instalación del software NI-VISA y sus controladores.
 
-image40
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image40.PNG)
 
 8. Una vez terminado el proceso de instalación se procede a reiniciar el equipo y listo, tendrá instalado NI-VISA en su equipo.
 
-image41
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image41.PNG)
 
 #### *Instalación del toolkit LINX*
 
 Para obtener este toolkit primero debemos ir al siguiente [enlace](http://sine.ni.com/nips/cds/view/p/lang/es/nid/212478) el cual nos dirigirá a la página de National Instruments, como se ve en la imagen damos clic en recursos y después en descargar.
 
-image42
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image42.png)
 
 Después le pedirán crear una cuenta o si ya tiene una ingresar para poder descargar, una vez que ha ingresado da clic en Download Toolkit, y después en Abrir VIPMHelper.
 
-image43
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image43.png)
 
 Se abrirá una ventana como esta: 
 
-image44
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image44.PNG)
 
 A continuación, se procede a realizar la instalación del toolkit LINX, podemos cambiar la versión de LabVIEW que se muestra si es necesario y después damos clic en el botón Install
 
-image45
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image45.png)
 
 Como siguiente paso, se procede aceptar los acuerdos de licencia del toolkit LINX de Digilent.
 
-image46
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image46.PNG)
 
 Una vez aceptados los acuerdos de licencia, automáticamente se inicia la instalación del toolkit LINX de Digilent. Para finalizar la instalación se procede a dar clic en el botón Finish.
 
-image47
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image47.PNG)
 
 Si todo salió bien ahora tenemos todo lo neceario para conectar LabVIEW con Arduino y empezar las siguientes practicas.
 
