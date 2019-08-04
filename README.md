@@ -8,7 +8,7 @@
 - [Instalación del software NI VISA y del toolkit LINX](#instalación-del-software-ni-visa-y-del-toolkit-linx).
 - [Tercer programa](#tercer-programa).
 
-## *Introducción a LabVIEW*
+## *Introducción a LabVIEW*                            
 *Volver al [Índice](#índice).*
 
 LabVIEW es la contracción de las palabras en inglés *"Laboratory Virtual Instrument Engineering Workbench"*, y este es un entorno de programación gráfica usado por ingenieros y cientificos para desarrollar mediciones sofisticadas, pruebas y sistemas de control. LabVIEW puede integrar una gran variedad de dispositivos de hardware.
