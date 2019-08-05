@@ -294,32 +294,32 @@ Si todo salió bien ahora tenemos todo lo neceario para conectar LabVIEW con Ard
 
 Ahora estamos listos para probar nuestra instalación de LabVIEW / LINX y comenzar a probar nuestra interfaz de LabVIEW para Arduino. Lo primero que debe hacer es ir a la ventana principal de LabVIEW; luego, haga clic en **Tools** y luego en **MakerHub**, que es el enlace para acceder a la interfaz LINX. Luego, haga clic en LINX y, finalmente, haga clic en **LINX Firmware Wizard**
 
-image48
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image48.png)
 
 Esto lo llevará a la interfaz gráfica LINX que utilizaremos para configurar nuestra placa Arduino para la practica. Tenga en cuenta que este paso debe hacerse solo una vez; Una vez que el software correcto esté cargado en la placa Arduino, no tendrá que volver a tocarlo. 
 El asistente comienza preguntándonos qué tipo de Arduino vamos a utilizar. Configure esta primera página seleccionando la opción que le convenga. En este caso estaré usando un Arduino mega por lo que la configuración queda así:
 
-image49
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image49.PNG)
 
 Damos clic en Next y después de eso, se le pedirá que seleccione el puerto serie en el que desea que se comunique la interfaz. Como solo he conectado una placa Arduino en ese momento, solo se puede seleccionar el puerto que Windows llama COM8. Una forma muy simple de encontrar el puerto COM o serie que corresponde a su placa Arduino es ir al panel de control y después a dispositivos e impresoras, aquí aparecerá la tarjeta Arduino que este conectada y el puerto COM correspondiente. Una vez que se eligio el puerto damos clic en Next.
 
-image50
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image50.png)
 
 Nevamente damos next en la ventana que aparece.
 
-image51
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image51.PNG)
 
 Finalmente damos clic en Launch Example que es para cargar un programa de ejemplo y comenzará a cargar el firmware en la placa Arduino.
 
-image52
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image52.PNG)
 
 Al terminar de cargar el programa se abrira un nuevo VI igual a este: 
 
-image53
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image53.PNG)
 
 Como puede ver, este VI es realmente simple, ya que puede controlar el valor de un pin digital del Arduino haciendo clic en el botón verde en el lado derecho. Hay dos cosas que debe modificar aquí antes de poder iniciar el VI. Primero, debe configurar el puerto serie correcto en el cuadro **Serial Port**. Simplemente elija el nombre de su puerto, y se completará automáticamente lo que está escribiendo. Luego, debe establecer qué pin desea controlar. Simplemente puede usar el pin número 13 aquí, ya que está conectado al LED incorporado en la placa Arduino. Si elige cualquier otro pin, podrá construir un circuito simple en su placa, como se muestra en la ilustración en el lado izquierdo del VI.
 
-image54
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image54.png)
 
 
 
