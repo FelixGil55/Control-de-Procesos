@@ -292,7 +292,7 @@ Si todo salió bien ahora tenemos todo lo neceario para conectar LabVIEW con Ard
 ## *Tercer programa*
 *[Volver al Índice](#índice).*
 
-
+Ahora estamos listos para probar nuestra instalación de LabVIEW / LINX y comenzar a probar nuestra interfaz de LabVIEW para Arduino. Lo primero que debe hacer es ir a la ventana principal de LabVIEW; luego, haga clic en Herramientas y luego en LabVIEW Hacker, que es el enlace para acceder a la interfaz LINX. Luego, haga clic en LINX y, finalmente, haga clic en LINX Firmware Wizard
 
 
 
