@@ -329,9 +329,9 @@ Para ver los detalles vaya a la ventana de Diagrama de bloques y aparecerá algo
 
 image56
 
-Como podemos ver hay varios bloques nuevos, esto es debido a la instalación del toolkit LINX, ahora analicemos como es que funciona este primer programa para poder entender los siguientes.
-Tenemos cuatro bloques que podríamos llamar principales estos son: 
-##### 1.Open Serial
+Ahora analicemos como es que funciona este primer programa para poder entender los siguientes.
+Tenemos cuatro bloques que podríamos decir que son los principales, estos son: 
+### 1.Open Serial
 Abre una conexión en serie a un dispositivo LINX remoto.
 
 ![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/openlinx.PNG)
@@ -364,7 +364,7 @@ El nombre del dispositivo LINX remoto.
 
 Contiene información de error. Esta salida proporciona la funcionalidad de error estándar.
 
-#### 2.Digital Write 1 Chan
+### 2.Digital Write 1 Chan
 Escribe un valor en el canal de salida digital especificado.
 
 ![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/dwritelinx.PNG)
@@ -397,7 +397,7 @@ Contiene recursos de conexión LINX.
 
 Contiene información de error. Esta salida proporciona la funcionalidad de error estándar.
 
-#### 3.Close
+### 3.Close
 
 Cierre la conexión al dispositivo LINX remoto y libere cualquier recurso de E / S local.
 
@@ -464,6 +464,8 @@ Contiene información de error. Esta salida proporciona la funcionalidad de erro
 **Message**
 
 Describe el código de error que ocurrió, la fuente del error y una descripción del error. Si el VI no devuelve una descripción del error, usted puede realizar varias acciones para encontrar la descripción del código de error. Si existe más de una descripción para el mismo código de error, el VI muestra todas las descripciones, separadas por un Or.
+
+En la siguiente imagen se colocan números en las conexiones y posteriormente se describirán para poder entender mejor cómo funciona el programa.
 
 
 
