@@ -329,6 +329,141 @@ Para ver los detalles vaya a la ventana de Diagrama de bloques y aparecerá algo
 
 image56
 
+Como podemos ver hay varios bloques nuevos, esto es debido a la instalación del toolkit LINX, ahora analicemos como es que funciona este primer programa para poder entender los siguientes.
+Tenemos cuatro bloques que podríamos llamar principales estos son: 
+##### 1.Open Serial
+Abre una conexión en serie a un dispositivo LINX remoto.
+
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/openlinx.PNG)
+ 
+Como entradas tenemos:
+
+**Serial Port**
+
+Especifica el puerto COM del dispositivo LINX remoto.
+
+**Baund Rate Override**
+
+(Opcional) Cuando se especifica, permite al usuario anular la velocidad de transmisión predeterminada utilizada para la comunicación en serie. De forma predeterminada, LINX establece la comunicación utilizando una velocidad en baudios de 9600 y luego negocia la velocidad máxima en baudios del dispositivo LINX remoto y restablece la comunicación a esa velocidad máxima. Si se proporciona una entrada de anulación de velocidad en baudios, se utilizará la velocidad en baudios máxima. Esto es útil cuando se usan abstracciones UART que no pueden cambiar las velocidades en baudios sobre la marcha (Xbee, por ejemplo).
+
+**Error In** 
+
+Describe las condiciones de error que ocurren antes de que se ejecute este nodo. Esta entrada proporciona la funcionalidad de error estándar.
+
+Como salidas tenemos:
+
+**LINX Resource** 
+
+Contiene recursos de conexión LINX.
+
+**Device Name**
+
+El nombre del dispositivo LINX remoto.
+
+**Error Out** 
+
+Contiene información de error. Esta salida proporciona la funcionalidad de error estándar.
+
+#### 2.Digital Write 1 Chan
+Escribe un valor en el canal de salida digital especificado.
+
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/dwritelinx.PNG)
+ 
+Como entradas tenemos:
+
+**LINX Resource**
+
+Contiene recursos de conexión LINX.
+
+**DO Channel** 
+
+Especifica el canal de salida digital para escribir.
+
+**Output Value**
+
+Especifica el valor digital para escribir.
+
+**Error In**
+
+Describe las condiciones de error que ocurren antes de que se ejecute este nodo. Esta entrada proporciona la funcionalidad de error estándar.
+
+Como salidas tenemos:
+
+**LINX Resource**
+
+Contiene recursos de conexión LINX.
+
+**Error Out** 
+
+Contiene información de error. Esta salida proporciona la funcionalidad de error estándar.
+
+#### 3.Close
+
+Cierre la conexión al dispositivo LINX remoto y libere cualquier recurso de E / S local.
+
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/closelinx.PNG)
+ 
+Como entradas tenemos:
+
+**LINX Resource**
+
+Contiene recursos de conexión LINX.
+
+**Error In** 
+
+Describe las condiciones de error que ocurren antes de que se ejecute este nodo. Esta entrada proporciona la funcionalidad de error estándar.
+
+Como salidas tenemos:
+
+**Error Out** 
+
+Contiene información de error. Esta salida proporciona la funcionalidad de error estándar.
+
+### 4.Simple Error Handler.
+Indica si se produjo un error. Si se produjo un error, este VI devuelve una descripción del error y, opcionalmente, muestra un cuadro de diálogo.
+Este VI llama al General Error Handler VI y tiene la misma funcionalidad básica que el General Error Handler pero con menos opciones.
+
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/Simpleerror.png)
+ 
+En este bloque normalmente usaremos solamente la entrada llamada Error In, sin embargo, se explicarán todas las entrada y salidas del bloque.
+
+**Error Code**
+
+Es un código de error numérico. Si el **Error In** indica un error, el VI ignora el **Error Code**. Si no, el VI lo prueba. Un valor distinto de cero significa un error.
+
+**Error Source**
+
+Es una cadena opcional que puede usar para describir la fuente del **Error Code**.
+
+**Type of Dialog**
+
+Determina qué tipo de cuadro de diálogo mostrar, si lo hay. Independientemente de su valor, el VI emite la información de error y el mensaje que describe el error.
+
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/cuadrolinx.png)
+
+**Error In**
+
+Describe las condiciones de error que ocurren antes de que se ejecute este nodo. Esta entrada contiene estado, código y fuente, que proporcionan la funcionalidad de un error estándar del elemento del clúster. 
+
+**Error?**
+
+Devuelve VERDADERO si se produce un error. Si este VI encuentra un error, establece los parámetros en el clúster de error.
+
+**Code Out**
+
+Es el código de error indicado por un **Error In** o un **Error Code**.
+
+**Source Out** 
+
+Indica la fuente del error.
+
+**Error Out** 
+
+Contiene información de error. Esta salida proporciona la funcionalidad de error estándar.
+
+**Message**
+
+Describe el código de error que ocurrió, la fuente del error y una descripción del error. Si el VI no devuelve una descripción del error, usted puede realizar varias acciones para encontrar la descripción del código de error. Si existe más de una descripción para el mismo código de error, el VI muestra todas las descripciones, separadas por un Or.
 
 
 
