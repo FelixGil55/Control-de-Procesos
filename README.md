@@ -325,9 +325,10 @@ Ahora correremos el VI, para hacerlo simplemente haga clic en la flecha pequeña
 
 image55
 
-Para ver los detalles vaya a la ventana de Diagrama de bloques (Ctrl+T) y aparecera algo como esto: 
+Para ver los detalles vaya a la ventana de Diagrama de bloques y aparecerá algo como esto: 
 
 image56
+
 
 
 
