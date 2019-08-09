@@ -321,15 +321,23 @@ Como puede ver, este VI es realmente simple, ya que puede controlar el valor de 
 
 ![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image54.png)
 
-Ahora correremos el VI, para hacerlo simplemente haga clic en la flecha pequeña en la barra de herramientas, entonces espere un momento, el VI ahora intentará inicializar la comunicación con el Arduino. Si hace clic en algo de inmediato, puede producir un error. usted sabrá que el proceso de inicialización se completa cuando los LED's de puerto de la placa Arduino (TX y RX) están encendidos. Luego haga clic en el botón verde que se encuentra en el Panel frontal, verá que el LED de la placa Arduino se enciende o apaga al mismo tiempo que presiona el boton del Panel frontal, ahora hemos conectado exitosamente la placa Arduino con LabVIEW.
+Ahora correremos el VI, para hacerlo simplemente haga clic en la flecha pequeña en la barra de herramientas, entonces espere un momento, el VI ahora intentará inicializar la comunicación con el Arduino. Si hace clic en algo de inmediato, puede producir un error. usted sabrá que el proceso de inicialización se completa cuando los LED's de puerto de la placa Arduino (TX y RX) están encendidos. Ya que el programa esta completamente listo podemos ponerlo a prueba, en el Panel frontal podemos ver que el boton verde se encuentra apagado.
 
 ![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image55.PNG)
 
-![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/arduinoa.jpg)
+De la misma forma que en Panel frontal el led **L** de la placa Arduino se encuentra apagado.
+
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/arduinoap.png)
+
+Si presionamos el boton del Panel frontal este se encendera.
 
 ![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/image552.PNG)
 
-![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/arduinoe.jpg)
+De la misma forma el led **L** de la placa Arduino se enciende al mismo tiempo que presionamos el boton verde.
+
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/arduinoen.png)
+
+Verá que el LED de la placa Arduino se enciende o apaga al mismo tiempo que presiona el boton del Panel frontal, ahora hemos conectado exitosamente la placa Arduino con LabVIEW.
 
 Para ver los detalles vaya a la ventana de Diagrama de bloques y aparecerá algo como esto: 
 
