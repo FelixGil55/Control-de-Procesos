@@ -504,7 +504,7 @@ Finalmente, necesitará una placa de pruebas y jumpers para hacer todas las cone
 #### Configuración de hardware
 Veamos ahora cómo ensamblar los diferentes componentes del proyecto. Este esquema lo ayudará a visualizar las conexiones entre los diferentes componentes:
 
-Motor1
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/motor1.png)
 
 Para ensamblar los componentes, siga los siguientes pasos:
 
@@ -522,7 +522,7 @@ Para ayudarlo, aquí hay un [enlace](http://users.ece.utexas.edu/~valvano/Datash
 
 Así es como debería verse al final:
 
-Motor2
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/motor2.PNG)
 
 Cuando haya terminado, puede pasar al siguiente paso, construir el VI en LabVIEW para controlar el motor DC.
 
@@ -532,32 +532,32 @@ Después de eso, colocaremos nuestros primeros elementos del paquete LINX. Los p
 
 Desde el mismo submenú, coloque dos bloques de Digita Write (que se utilizarán para controlar la dirección del motor) y un bloque PWM (que se utilizará para controlar la velocidad del motor). Tenga en cuenta que puede encontrar estos bloques en el menú Periféricos. Este es el resultado:
 
-Motor3
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/motor3.PNG)
 
 Necesitamos un bloque PWM aquí para controlar la velocidad del motor. PWM significa Modulación de ancho de pulso y se utiliza para controlar la velocidad del motor o para atenuar los LED, por ejemplo. En la placa Arduino, es una salida de la placa que se puede configurar de 0 a 255 en algunos pines de la placa Uno.
 Ahora, necesitamos alguna forma de decirle a LabVIEW en qué orden queremos que el sketch sea ejecutado. Aquí es donde entran en juego el error y el LINX resource. Simplemente comienza desde el bloque de inicialización en el lado izquierdo y encuentre el pin de error en el bloque.
 Luego, conecte el pin de salida de error de este bloque al pin de entrada de error del primer bloque digital y así sucesivamente hasta el bloque final. Después de eso, haga lo mismo con los pines del LINX resource. También agregue un controlador de errores simple al final del VI, justo después de la parada bloquear. Este controlador se puede encontrar en el menú Diálogo e interfaz de usuario.
 
-Motor4
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/motor4.PNG)
 
 Ahora que tenemos la parte principal de nuestro proyecto, alimentaremos los bloques con algunas entradas, primero agregue un puerto serie al bloque de inicialización yendo al pin del puerto serie del bloque y haciendo clic derecho sobre él. Luego, vaya a Create y luego a Control, para agregar automáticamente una entrada de puerto serie. Notara que el control correspondiente también se agrega automáticamente al Panel frontal. Cambie el nombre de este control a Puerto serie para que podamos identificarlo en el Panel frontal. También crearemos el mismo tipo de controles para los pines de los bloques que colocamos anteriormente. Para cada bloque, simplemente agregue entradas haciendo clic derecho en la entrada del pin y luego yendo a Create y después a Control. Además, cambie el nombre de todos estos controles para que sepamos lo que significan más adelante en el Panel frontal.
 
-Motor5
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/motor5.PNG)
 
 También necesitamos agregar una condición final para el bucle While. Para hacerlo, necesitamos conectar el pequeño círculo rojo que se encuentra en la esquina inferior derecha al While Loop. Simplemente conectaremos el cable de error directamente a este círculo rojo. Para hacerlo, solo seleccione el pin de entrada del círculo rojo y conéctelo al error inferior cable dentro del VI.
 
-Motor6
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/motor6.PNG)
 
 Ahora alimentaremos los valores de los diferentes bloques que cambiaremos desde el Panel frontal para controlar el motor. En esta etapa, lo mantendremos simple: tendremos algunos controles de encendido / apagado para la dirección y un cuadro de texto simple para la velocidad del motor.
 Primero, establezcamos la dirección que necesitamos para alimentar los dos primeros bloques LINX en nuestro VI. El chip L293D requiere ser alimentado con señales opuestas en los dos pines de dirección para que el motor gire en una dirección dada. Por ejemplo, cuando el primer Digital Write está activado, queremos que el segundo esté desactivado y viceversa.
 Para hacerlo, crearemos un bloque de control en el primer bloque de escritura digital, nuevamente haga clic derecho en el pin de entrada y luego vaya a Create/Control. Entonces iremos al menú Funciones, en Booleanos, elija un elemento Not y úselo para conectar nuestro control al segundo canal de escritura digital. De esta manera, estamos seguros de que estos dos siempre estará en estados opuestos.
 Finalmente, también haga lo mismo para el bloque PWM creando un control para el valor del PWM. Este simplemente se mostrará como una entrada de texto dentro del Panel frontal. Lo haremos también que cambie el nombre de este pin como Velocidad del motor para que sepamos lo que significa en el Panel frontal.
 
-Motor7
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/motor7.PNG)
 
 Ahora puede volver al Panel frontal y ver todos los elementos que estaban agregado automáticamente para usted. Organícelos un poco para que sea más fácil de controlar el motor.
 
-Motor8
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/motor8.PNG)
 
 Es hora de probar el VI. Primero, configure todos los pines correctos y su puerto serie, como se muestra en la imagen anterior. Luego, haga clic en la pequeña flecha en la barra de herramientas para comenzar el VI.
 Ahora puede ingresar un valor entre 0 y 255 en la entrada Velocidad del motor; ya verás que el motor comienza a girar de inmediato. Tenga en cuenta que tenemos que usar un valor entre 0 y 255, ya que el valor de salida PWM de Arduino Uno está codificado en 8 bits, por lo que tiene 256 valores. También puede usar el botón verde para cambiar la dirección del motor.
@@ -566,20 +566,20 @@ Ahora puede ingresar un valor entre 0 y 255 en la entrada Velocidad del motor; y
 Ahora tenemos un control básico para nuestro motor DC, pero podemos hacerlo mejor. De hecho, no es tan conveniente escribir la velocidad del motor en el panel frontal cada vez que desee para modificar algo es por eso que presentaremos otro tipo de control llamado Mando de control.
 Para agregar dicho control, comience desde el Panel frontal y haga clic derecho para abrir los Controles panel. Luego, vaya a Numérico y seleccione el control Knob del menú.
 
-Motor9
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/motor9.PNG)
 
 Ahora, la perilla está insertada en el Panel frontal, puede volver al diagrama de bloques donde puede eliminar el control de texto anterior del bloque PWM y conectar el nuevo en lugar. También puede cambiarle el nombre a Velocidad del motor.
 
-Motor10
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/motor10.PNG)
 
 Ahora, también tenemos que configurar la perilla para que su valor de salida coincida con el aceptado del bloque PWM. Recuerde que el bloque PWM de LINX acepta valores entre 0 y 255.
 Para hacerlo, simplemente haga clic derecho en el bloque Knob y haga clic en Propiedades. En este menú haga clic en Scale y cambie los valores mínimo y máximo, como se muestra en la siguiente captura de pantalla:
 
-Motor11
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/motor11.PNG)
 
 Ahora puede volver al Panel frontal. Verá que la perilla ahora muestra los valores correctos, que van de 0 a 255. También puede cambiar el tamaño de la perilla en este punto para qué sea más fácil de usar.
 
-Motor12
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/motor12.PNG)
 
 Ahora es el momento de probar la interfaz modificada. Como hizo antes, haga clic en la pequeña flecha dentro de la barra de herramientas. Ahora puede simplemente girar la perilla para cambiar instantáneamente la velocidad de rotación del motor.
 
