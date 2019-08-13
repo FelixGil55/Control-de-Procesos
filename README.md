@@ -7,6 +7,13 @@
 - [Segundo programa](#segundo-programa).
 - [Instalación del software NI VISA y del toolkit LINX](#instalación-del-software-ni-visa-y-del-toolkit-linx).
 - [Tercer programa](#tercer-programa).
+- [Cuarto programa](#cuarto-programa).
+- [Quinto programa](#quinto-programa).
+- [Sexto programa](#sexto-programa).
+- [Séptimo programa](#séptimo-programa).
+- [Octavo programa](#octavo-programa).
+- [Noveno programa](#noveno-programa).
+- [Decimo programa](#decimo-programa).
 
 ## *Introducción a LabVIEW*                            
 *[Volver al Índice](#índice).*
@@ -479,7 +486,31 @@ Contiene información de error. Esta salida proporciona la funcionalidad de erro
 
 Describe el código de error que ocurrió, la fuente del error y una descripción del error. Si el VI no devuelve una descripción del error, usted puede realizar varias acciones para encontrar la descripción del código de error. Si existe más de una descripción para el mismo código de error, el VI muestra todas las descripciones, separadas por un Or.
 
-En la siguiente imagen se colocan números en las conexiones y posteriormente se describirán para poder entender mejor cómo funciona el programa.
+## *Cuarto programa*
+*[Volver al Índice](#índice).*
+
+few
+
+
+
+## *Quinto programa*
+*[Volver al Índice](#índice).*
+
+
+
+
+
+
+## *Sexto programa*
+*[Volver al Índice](#índice).*
+
+
+
+
+
+
+## *Séptimo programa*
+*[Volver al Índice](#índice).*
 
 
 
@@ -487,6 +518,16 @@ En la siguiente imagen se colocan números en las conexiones y posteriormente se
 
 
 
+## *Octavo programa*
+*[Volver al Índice](#índice).*
+
+
+
+
+
+
+## *Noveno programa*
+*[Volver al Índice](#índice).*
 
 
 
@@ -494,6 +535,8 @@ En la siguiente imagen se colocan números en las conexiones y posteriormente se
 
 
 
+## *Decimo programa*
+*[Volver al Índice](#índice).*
 
 
 
