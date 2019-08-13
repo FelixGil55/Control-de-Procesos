@@ -496,6 +496,35 @@ few
 ## *Quinto programa*
 *[Volver al Índice](#índice).*
 
+En esta práctica controlaremos un motor de DC que esté conectado a la placa Arduino. Se va a controlar la dirección y la velocidad directamente desde Interfaz gráfica de LabVIEW.
+Para el motor, se eligió un pequeño motor de 5V DC. Puede elegir cualquier marca que desee para el motor lo importante es que tiene que funcionar a 5V para que pueda alimentarse directamente desde Arduino. También puede conseguir un motor que use voltajes o corrientes más altas, pero deberá modificar la configuración de hardware ligeramente.
+También necesitará el controlador de motor L293D para controlar el motor desde Arduino. Este es un chip dedicado que usaremos para controlar fácilmente el motor desde LabVIEW. Usted también puede usar una alternativa a este chip; por ejemplo, puede usar un Arduino shield que ya integra chips similares en el tablero. Este es, por ejemplo, el caso del Arduino motor shield, que integra el chip L298D. Sin embargo, necesitaria modificar ligeramente el código si está utilizando un shield en lugar del chip solo.
+Finalmente, necesitará una placa de pruebas y jumpers para hacer todas las conexiones.
+
+#### Configuración de hardware
+Veamos ahora cómo ensamblar los diferentes componentes del proyecto. Este esquema lo ayudará a visualizar las conexiones entre los diferentes componentes:
+
+Motor1
+
+Para ensamblar los componentes, siga los siguientes pasos:
+
+1. Primero, coloque el chip L293D en el centro de la placa de pruebas.
+
+2. Luego, cuide la fuente de alimentación; conecte el pin superior izquierdo y el pin inferior derecho del chip L293D al pin Arduino 5V.
+
+3. Luego, conecte uno de los pines en el centro inferior del chip al Pin Arduino GND.
+
+4. Después de eso, conecte las señales de comando provenientes del Arduino, que estará en los pines 4, 5 y 6, y la placa Arduino Uno.
+
+5. Finalmente, conecte el motor de DC al chip L293D, como se muestra en el esquema.
+
+Para ayudarlo, aquí hay un [enlace](http://users.ece.utexas.edu/~valvano/Datasheets/L293d.pdf) a la configuración de los pines del chip L293D.
+
+Así es como debería verse al final:
+
+Motor2
+
+Cuando haya terminado, puede pasar al siguiente paso, construir el VI en LabVIEW para controlar el motor DC.
 
 
 
