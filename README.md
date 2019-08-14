@@ -266,6 +266,47 @@ Por ultimo corremos el programa y corroboramos que funciona adecuadamente. Podem
 ## *Cuarto programa*
 *[Volver al Índice](#índice).*
 
+En esta práctica se va a realizar un programa que haga que un led prenda cada 500 mili segundos, para ello primero trabajaremos en el Panel frontal, para llevar a cabo esta práctica necesitaremos un led y un botón de Stop solamente, colocamos el led y el Stop y los hacemos más grandes para poder visualizarlos mejor.
+
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/led1.PNG)
+
+Una vez que hemos terminado de trabajar en el Panel frontal procederemos a trabajar en el Diagrama de bloques, como primer paso colocaremos un ciclo While y conectamos el botón de Stop como ya hemos visto anteriormente, el programa hasta aquí se debe ver similar a esto:
+
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/led2.PNG)
+
+Ahora utilizaremos un bloque que se llama Quotient & Remainder:
+
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/led3.png)
+
+Este bloque calcula el cociente entero y el resto de las entradas.
+
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/led4.PNG)
+
+Si el valor de entrada entero de y es cero, el cociente es cero y el resto es dividendo x. Para entradas de punto flotante, si y es cero, el cociente es infinito y el resto por defecto es NaN.
+A este bloque le conectaremos como entradas primero a la terminal de iteración, que es la i encerrada en un cuadro azul, esta se encuentra en la parte inferior izquierda y aparece junto con el ciclo While.
+
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/led5.png)
+
+El terminal de iteración es un terminal de salida que contiene el número de iteraciones completadas. El recuento de iteraciones siempre comienza en cero. Durante la primera iteración, el terminal de iteración devuelve 0. Esta será **i = i + 1**.
+En la siguiente entrada colocaremos una constante numérica y le daremos el valor de 2, esto es para que el programa divida el número de iteración entre dos, hasta ahora el Diagrama debe ser similar a este:
+
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/led6.PNG)
+
+Ahora necesitamos colocar algo que pueda comparar el resultado, para ello colocamos un Greater than 0? 
+
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/led7.png)
+
+Conectamos la salida R del bloque Quotient & Remainder a la entrada de coparador y a su vez conectamos la salida del comparador a la entrada del led, el comparador detectara cuando se cumpla la condición y esta ara que el led se encienda o no. 
+Para hacer que el led prenda cada 500 mili segundos necesitaremos colocar un Wait Until Next ms Multiple y a este le conectaremos un bloque de constante numérico al cual le daremos el valor de 500, con esto sabremos que cada 500 mili segundos se repetirá la tarea.
+El Diagrama final debe verse similar a este:
+
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/led8.PNG)
+
+Ahora el led se encenderá cada 500 mili segundos, pero si usted desea ver con detalle y entender bien el funcionamiento puede correr el programa y dar clic al icono de la bombilla para apreciar paso por paso lo que hace el programa. 
+
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/led9.png)
+
+Como podemos ver entra un valor 9 y se divide entre dos, después el resultado es flotante por lo cual lo toma como 1 haciendo que se cumpla la condición, como arroja un True este permite que el led encienda, y a la siguiente iteración como dará 0 como resultado no encenderá el led, de esta forma hemos concluido el programa. 
 
 
 ## *Instalación del software NI VISA y del toolkit LINX*
