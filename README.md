@@ -6,8 +6,8 @@
 - [Primer programa](#primer-programa).
 - [Segundo programa](#segundo-programa).
 - [Tercer programa](#tercer-programa).
-- [Instalación del software NI VISA y del toolkit LINX](#instalación-del-software-ni-visa-y-del-toolkit-linx).
 - [Cuarto programa](#cuarto-programa).
+- [Instalación del software NI VISA y del toolkit LINX](#instalación-del-software-ni-visa-y-del-toolkit-linx).
 - [Quinto programa](#quinto-programa).
 - [Sexto programa](#sexto-programa).
 - [Séptimo programa](#séptimo-programa).
@@ -263,6 +263,11 @@ Por ultimo corremos el programa y corroboramos que funciona adecuadamente. Podem
 
 ![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/nivel8.png)
 
+## *Cuarto programa*
+*[Volver al Índice](#índice).*
+
+
+
 ## *Instalación del software NI VISA y del toolkit LINX*
 *[Volver al Índice](#índice).*
 
@@ -334,7 +339,7 @@ Una vez aceptados los acuerdos de licencia, automáticamente se inicia la instal
 
 Si todo salió bien ahora tenemos todo lo neceario para conectar LabVIEW con Arduino y empezar las siguientes practicas.
 
-## *Cuarto programa*
+## *Quinto programa*
 *[Volver al Índice](#índice).*
 
 Ahora estamos listos para probar nuestra instalación de LabVIEW / LINX y comenzar a probar nuestra interfaz de LabVIEW para Arduino. Lo primero que debe hacer es ir a la ventana principal de LabVIEW; luego, haga clic en **Tools** y luego en **MakerHub**, que es el enlace para acceder a la interfaz LINX. Luego, haga clic en LINX y, finalmente, haga clic en **LINX Firmware Wizard**
@@ -523,12 +528,6 @@ Contiene información de error. Esta salida proporciona la funcionalidad de erro
 **Message**
 
 Describe el código de error que ocurrió, la fuente del error y una descripción del error. Si el VI no devuelve una descripción del error, usted puede realizar varias acciones para encontrar la descripción del código de error. Si existe más de una descripción para el mismo código de error, el VI muestra todas las descripciones, separadas por un Or.
-
-## *Quinto programa*
-*[Volver al Índice](#índice).*
-
-few
-
 
 
 ## *Sexto programa*
