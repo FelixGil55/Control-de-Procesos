@@ -603,7 +603,7 @@ Así es como debería verse al final:
 Cuando haya terminado, puede pasar al siguiente paso, construir el VI en LabVIEW para controlar el motor DC.
 
 #### Escribiendo el programa LabVIEW
-Para comenzar el proceso, abra LabVIEW y cree un nuevo VI en blanco. Lo primero que colocaremos en el VI en blanco es un bucle While. Este bucle es requerido para cualquier placa Arduino que desee controlar a través de LINX, y todos los Arduino Los comandos deberán colocarse dentro de este bucle.
+Para comenzar el proceso, abra LabVIEW y cree un nuevo VI en blanco. Lo primero que colocaremos en el VI en blanco es un bucle While. Este bucle es requerido para cualquier placa Arduino que desee controlar a través de LINX.
 Después de eso, colocaremos nuestros primeros elementos del paquete LINX. Los primeros elementos que necesitamos colocar son los elementos de inicialización y detención de LINX, que son necesarios para decirle al software dónde comenzar y dónde parar. Puede encontrar ambas cajas en el panel de funciones yendo al submenú Makerhub.
 
 Desde el mismo submenú, coloque dos bloques de Digita Write (que se utilizarán para controlar la dirección del motor) y un bloque PWM (que se utilizará para controlar la velocidad del motor). Tenga en cuenta que puede encontrar estos bloques en el menú Periféricos. Este es el resultado:
