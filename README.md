@@ -12,8 +12,6 @@
 - [Sexto programa](#sexto-programa).
 - [Séptimo programa](#séptimo-programa).
 - [Octavo programa](#octavo-programa).
-- [Noveno programa](#noveno-programa).
-- [Decimo programa](#decimo-programa).
 
 ## *Introducción a LabVIEW*                            
 *[Volver al Índice](#índice).*
@@ -664,6 +662,49 @@ Ahora es el momento de probar la interfaz modificada. Como hizo antes, haga clic
 ## *Séptimo programa*
 *[Volver al Índice](#índice).*
 
+Para esta práctica vamos a realizar un medidor de temperatura usando un sensor LM35.
+Veamos ahora cómo ensamblar los diferentes componentes del proyecto. Este esquema lo ayudará a visualizar las conexiones entre los diferentes componentes:
+
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/lm1.png)
+
+Ya que ha terminado de armar el circuito podemos empezar a realizar el nuevo VI. Lo primero que colocaremos en el VI en blanco es un bucle While. Después de eso, colocaremos nuestros primeros elementos del paquete LINX. Los primeros elementos que necesitamos colocar son los elementos de inicialización y detención de LINX, que son necesarios para decirle al software dónde comenzar y dónde parar. Puede encontrar ambas cajas en el panel de funciones yendo al submenú Makerhub. Desde el mismo submenú, coloque un Analog Read 1 Chan. Hasta ahora el resultado debe ser similar a este:
+
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/lm2.PNG)
+
+Ahora, necesitamos alguna forma de decirle a LabVIEW en qué orden queremos que el sketch sea ejecutado, realizamos las conexiones adecuadas y colocamos un Simple Error Handler al final y también lo conectamos 
+
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/lm3.PNG)
+
+Ahora que tenemos la parte principal de nuestro proyecto, alimentaremos los bloques con algunas entradas, primero agregue un puerto serie al bloque de inicialización yendo al pin del puerto serie del bloque y haciendo clic derecho sobre él. Luego, vaya a Create y luego a Control, para agregar automáticamente una entrada de puerto serie. Notara que el control correspondiente también se agrega automáticamente al Panel frontal.
+También crearemos el control para el bloque Analog Read que colocamos anteriormente, simplemente agregue entradas haciendo clic derecho en la entrada del pin y luego yendo a Create y después a Control. Además, cambie el nombre de todos estos controles para que sepamos lo que significan más adelante en el Panel frontal.
+
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/lm4.PNG)
+
+También necesitamos agregar una condición final para el bucle While. Para hacerlo, necesitamos agregar una compuerta OR y conectar una entrada de este al cable del error y la otra a un botón de Stop, esto para que el programa para si hay algún error o que pare cuando nosotros presionemos Stop, después la salida de la compuerta OR la conectamos al pequeño círculo rojo que se encuentra en la esquina inferior derecha al While Loop.
+
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/lm5.PNG)
+
+Por ultimo necesitamos conectar a voltaje la condición que ara que se lea correctamente la temperatura mediante el LM35, para esto colocaremos un termómetro en el Panel frontal, cuando aparezca en el Diagrama de bloques colocaremos un multiplicador, en este colocaremos una constante y le daremos un valor de 100 y en la otra entrada colocaremos la salida de voltaje del Digital Read, esto para que pueda leer correctamente el sensor según su funcionamiento. Por ultimo cambiamos a indicador el termómetro y conectamos la salida del multiplicador a la entrada del termómetro para que en este se marque el resultado. 
+
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/lm6.PNG)
+
+Ahora por ultimo en el Panel frontal cambiamos el tamaño del termómetro, también cambiaremos sus valores para que vaya de o a 40 °C, y por ultimo le colocamos un display digital para visualizar mejor el resultado.
+
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/lm7.PNG)
+
+Cargamos y seleccionamos el puerto del Arduino y probamos el circuito.
+
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/lm8.png)
+
+Podemos ver que marca que la temperatura ambiente es de 16°C aproximadamente.
+
+Ahora con cuidado acercaremos un encendedor muy rápido y lo quitamos para ver su comportamiento.
+
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/lm9.jpg)
+
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/lm10.png)
+
+Como pudimos ver al acercar el encendedor de inmediato cambia su valor y detecta el aumento de la temperatura, lo que demuestra que la práctica salió bien. 
 
 
 
@@ -675,20 +716,6 @@ Ahora es el momento de probar la interfaz modificada. Como hizo antes, haga clic
 
 
 
-
-
-
-## *Noveno programa*
-*[Volver al Índice](#índice).*
-
-
-
-
-
-
-
-## *Decimo programa*
-*[Volver al Índice](#índice).*
 
 
 
