@@ -700,7 +700,7 @@ Podemos ver que marca que la temperatura ambiente es de 16°C aproximadamente.
 
 Ahora con cuidado acercaremos un encendedor muy rápido y lo quitamos para ver su comportamiento.
 
-![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/lm99.png)
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/lm99.PNG)
 
 ![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/lm10.png)
 
