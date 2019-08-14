@@ -5,8 +5,8 @@
 - [Primeros pasos en LabVIEW](#primeros-pasos-en-labview).
 - [Primer programa](#primer-programa).
 - [Segundo programa](#segundo-programa).
-- [Instalación del software NI VISA y del toolkit LINX](#instalación-del-software-ni-visa-y-del-toolkit-linx).
 - [Tercer programa](#tercer-programa).
+- [Instalación del software NI VISA y del toolkit LINX](#instalación-del-software-ni-visa-y-del-toolkit-linx).
 - [Cuarto programa](#cuarto-programa).
 - [Quinto programa](#quinto-programa).
 - [Sexto programa](#sexto-programa).
@@ -225,6 +225,44 @@ En el Panel frontal acomodamos el nuevo control donde mejor nos parezca y ya sol
 
 Puede corroborar el resultado en internet para que vea que el programa funciona correctamente.
 
+## *Tercer programa*
+*[Volver al Índice](#índice).*
+
+En esta práctica se va a elaborar un programa en LabVIEW que permita indicar el nivel de un tanque en un elemento gráfico de LabVIEW. El valor del nivel varía entre 0 y 100 unidades y debe obtenerse a través de una función aleatoria. El programa debe indicar un estado de alarma cuando el nivel sobrepase un valor de referencia que el usuario debe establecer. El estado de alarma se indicará por medio de un led, apagado: estado normal, encendido: estado de alarma.
+Primero seleccionemos los controles que pondremos. Para ello vamos a la opción Numerics que está dentro del menú Controls, Como se puede observar el elemento “Tank” es el más indicado para representar el nivel que es requerido en el ejercicio. Para colocarlo en el “panel frontal” del instrumento virtual que estamos diseñando, debemos seleccionarlo en la paleta de controles y luego soltarlo en el Panel frontal. Para este control aremos que se muestre el display digital, esto ya lo hemos aprendido en ejercicios anteriores, (Clic derecho sobre el control/Visible Items/Digital Display). También se cambiará la escala del tanque para que sea mínimo 0 y máximo 100, para que pueda apreciar mejor los valores del tanque puede hacer más grande este mismo. 
+El otro elemento gráfico necesario para resolver este ejercicio es un control numérico para establecer la referencia de la alarma. De la misma manera que se seleccionó el elemento Tank ahora debemos seleccionar el control digital. Para terminar la interfaz de usuario se debe colocar un botón booleano que permita mostrar el estado del tanque, en este caso colocamos un led, y para terminar la ejecución del programa colocaremos un botón booleano de Stop, a los dos controles los aremos más grandes para apreciarlos mejor. Hasta ahora el Panel frontal se debe ver algo así:
+
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/nivel1.PNG)
+
+Ya que terminamos de trabajar en el Panel frontal ahora iremos al Diagrama de bloques, primero colocaremos un ciclo While y conectaremos el botón de Stop al pequeño punto rojo que aparece con el ciclo While:
+
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/nivel2.PNG)
+
+Según el enunciado del ejercicio el tanque debe recibir el valor de nivel de una función aleatoria. En el caso de labVIEW esta función se encuentra entre las funciones numéricas y se puede escoger como sigue:
+
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/nivel3.png)
+Esta función brinda un valor aleatorio de tipo double entre 0 y 1. Sin embargo nuestra aplicación requiere que el nivel varía entre 0-1 00. Para ello debemos multiplicar la salida de esta función por el valor entero 100. Con ello se logra nuestro objetivo. La función de multiplicación se encuentra en la misma paleta de funciones numérica además de esta propia paleta debe utilizarse una constante numérica entera que contenga el valor 100 que será el otro elemento necesario.
+Hacemos las conexiones necesarias y hasta ahora el Diagrama de bloques está así:
+
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/nivel4.PNG)
+
+En cada iteración del ciclo el resultado de la función aleatoria se multiplica por 100 y este valor se asigna a la variable que representa al control tanque.
+Ahora debemos comparar el valor del tanque con la referencia entrada por el usuario. Si este valor es mayor que la referencia el led se encenderá, sino, el led permanecerá apagado. Para ello es necesario una función de comparación, que se puede encontrar en la paleta de funciones Comparison:
+
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/nivel5.png)
+
+De esta forma el programa ya puede funcionar, sin embargo, colocaremos un bloque de espera para que el programa no corra tan rápido y se pueda apreciar mejor como funciona, el bloque lo encontramos así:
+
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/nivel6.png)
+
+Después de colocarlo solo le conectaremos una constante con un valor de 500 para que el programa corra más lento. Por ultimo solo cambiaremos los nombres de los controles para que podamos entender mejor el programa. Al final debe quedar algo similar a esto:
+
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/nivel7.png)
+
+Por ultimo corremos el programa y corroboramos que funciona adecuadamente. Podemos ver que mientras el nivel del tanque no pase el límite que elegimos la alarma no enciende mientras que cuando pasa del límite esta alarma enciende. 
+
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/nivel8.png)
+
 ## *Instalación del software NI VISA y del toolkit LINX*
 *[Volver al Índice](#índice).*
 
@@ -296,7 +334,7 @@ Una vez aceptados los acuerdos de licencia, automáticamente se inicia la instal
 
 Si todo salió bien ahora tenemos todo lo neceario para conectar LabVIEW con Arduino y empezar las siguientes practicas.
 
-## *Tercer programa*
+## *Cuarto programa*
 *[Volver al Índice](#índice).*
 
 Ahora estamos listos para probar nuestra instalación de LabVIEW / LINX y comenzar a probar nuestra interfaz de LabVIEW para Arduino. Lo primero que debe hacer es ir a la ventana principal de LabVIEW; luego, haga clic en **Tools** y luego en **MakerHub**, que es el enlace para acceder a la interfaz LINX. Luego, haga clic en LINX y, finalmente, haga clic en **LINX Firmware Wizard**
@@ -486,14 +524,14 @@ Contiene información de error. Esta salida proporciona la funcionalidad de erro
 
 Describe el código de error que ocurrió, la fuente del error y una descripción del error. Si el VI no devuelve una descripción del error, usted puede realizar varias acciones para encontrar la descripción del código de error. Si existe más de una descripción para el mismo código de error, el VI muestra todas las descripciones, separadas por un Or.
 
-## *Cuarto programa*
+## *Quinto programa*
 *[Volver al Índice](#índice).*
 
 few
 
 
 
-## *Quinto programa*
+## *Sexto programa*
 *[Volver al Índice](#índice).*
 
 En esta práctica controlaremos un motor de DC que esté conectado a la placa Arduino. Se va a controlar la dirección y la velocidad directamente desde Interfaz gráfica de LabVIEW.
@@ -582,14 +620,6 @@ Ahora puede volver al Panel frontal. Verá que la perilla ahora muestra los valo
 ![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/motor12.PNG)
 
 Ahora es el momento de probar la interfaz modificada. Como hizo antes, haga clic en la pequeña flecha dentro de la barra de herramientas. Ahora puede simplemente girar la perilla para cambiar instantáneamente la velocidad de rotación del motor.
-
-## *Sexto programa*
-*[Volver al Índice](#índice).*
-
-
-
-
-
 
 ## *Séptimo programa*
 *[Volver al Índice](#índice).*
