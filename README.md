@@ -712,7 +712,7 @@ Como pudimos ver al acercar el encendedor de inmediato cambia su valor y detecta
 
 Para esta práctica se va a realizar un programa que, al pulsar un botón, un led prenda cada 500 mili segundos y al dejar de pulsar el botón el led se apague. Veamos ahora cómo ensamblar los diferentes componentes del proyecto. Este esquema lo ayudará a visualizar las conexiones entre los diferentes componentes:
 
-![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/pul1.PNG)
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/pul1.png)
 
 Ya que ha terminado de armar el circuito podemos empezar a realizar el nuevo VI. Lo primero que colocaremos en el VI en blanco es un bucle While. Después de eso, colocaremos nuestros primeros elementos del paquete LINX. Los primeros elementos que necesitamos colocar son los elementos de inicialización y detención de LINX, que son necesarios para decirle al software dónde comenzar y dónde parar. Puede encontrar ambas cajas en el panel de funciones yendo al submenú Makerhub. Desde el mismo submenú, coloque un Digital Read 1 Chan y un Digital Write 1 Chan. Hasta ahora el resultado debe ser similar a este:
 
@@ -758,13 +758,13 @@ Ahora corremos el programa y vemos que al no presionar el botón de la protoboar
 
 ![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/pul12.PNG)
 
-![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/pul13.jpg)
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/pul13.PNG)
 
 Ahora probamos pulsando el botón y podemos ver que el led del Panel frontal prende, y el led conectado en la protoboard también. 
 
 ![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/pul14.PNG)
 
-![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/pul15.jpg)
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/pul15.PNG)
 
 
 
