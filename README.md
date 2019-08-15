@@ -710,7 +710,7 @@ Como pudimos ver al acercar el encendedor de inmediato cambia su valor y detecta
 ## *Octavo programa*
 *[Volver al Índice](#índice).*
 
-Para esta práctica se va a realizar un programa que, al pulsar un botón, un led prenda cada 500 mili segundos y al dejar de pulsar el botón el led se apague. Veamos ahora cómo ensamblar los diferentes componentes del proyecto. Este esquema lo ayudará a visualizar las conexiones entre los diferentes componentes:
+Para esta práctica se va a realizar un programa que, al pulsar un botón, un led prenda cada 500 mili segundos y al dejar de pulsar el botón el led se apague. Veamos ahora cómo ensamblar los diferentes componentes del proyecto. Este esquema lo ayudará a visualizar las conexiones entre los diferentes componentes, en este caso se cambiara el pin 10 al 8:
 
 ![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/pul1.png)
 
