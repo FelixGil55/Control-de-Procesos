@@ -707,13 +707,64 @@ Ahora con cuidado acercaremos un encendedor muy rápido y lo quitamos para ver s
 Como pudimos ver al acercar el encendedor de inmediato cambia su valor y detecta el aumento de la temperatura, lo que demuestra que la práctica salió bien. 
 
 
-
-
-
-
 ## *Octavo programa*
 *[Volver al Índice](#índice).*
 
+Para esta práctica se va a realizar un programa que, al pulsar un botón, un led prenda cada 500 mili segundos y al dejar de pulsar el botón el led se apague. Veamos ahora cómo ensamblar los diferentes componentes del proyecto. Este esquema lo ayudará a visualizar las conexiones entre los diferentes componentes:
+
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/pul1.PNG)
+
+Ya que ha terminado de armar el circuito podemos empezar a realizar el nuevo VI. Lo primero que colocaremos en el VI en blanco es un bucle While. Después de eso, colocaremos nuestros primeros elementos del paquete LINX. Los primeros elementos que necesitamos colocar son los elementos de inicialización y detención de LINX, que son necesarios para decirle al software dónde comenzar y dónde parar. Puede encontrar ambas cajas en el panel de funciones yendo al submenú Makerhub. Desde el mismo submenú, coloque un Digital Read 1 Chan y un Digital Write 1 Chan. Hasta ahora el resultado debe ser similar a este:
+
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/pul2.PNG)
+
+Ahora, necesitamos alguna forma de decirle a LabVIEW en qué orden queremos que el programa sea ejecutado, realizamos las conexiones adecuadas y colocamos un Simple Error Handler al final y también lo conectamos
+
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/pul3.PNG)
+
+Ahora que tenemos la parte principal de nuestro proyecto, alimentaremos los bloques con algunas entradas, primero agregue un puerto serie al bloque de inicialización yendo al pin del puerto serie del bloque y haciendo clic derecho sobre él. Luego, vaya a Create y luego a Control, para agregar automáticamente una entrada de puerto serie. Notara que el control correspondiente también se agrega automáticamente al Panel frontal. También crearemos una constante para los bloques Digital Read y Digital Write que colocamos anteriormente, simplemente agregue entradas haciendo clic derecho en la entrada del pin y luego yendo a Create y después en Constant, a estas constantes les daremos el valor de 8 para el Digital Read y el 4 para el Digital Write, esto es para que sea el número de pin que leerá del Arduino.
+
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/pul4.PNG)
+
+También necesitamos agregar una condición final para el bucle While. Para hacerlo, necesitamos agregar una compuerta OR y conectar una entrada de este al cable del error y la otra a un botón de Stop, esto para que el programa para si hay algún error o que pare cuando nosotros presionemos Stop, después la salida de la compuerta OR la conectamos al pequeño círculo rojo que se encuentra en la esquina inferior derecha al While Loop.
+
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/pul5.PNG)
+
+Ahora necesitamos crear las condiciones para que el programa realice lo que queremos, primero colocaremos una True Constant, está la podemos encontrar en la sección Boolean, esta constante quedara fuera del While Loop, después de crear esta constante colocaremos una compuerta AND, este si quedara dentro del While Loop, y también colocamos una compuerta NOT. Por ultimo en el Panel frontal vamos a colocar un led, que será el que prendera cada 500 mili segundos. 
+
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/pul6.PNG)
+
+Ahora conectaremos la salida DI Value del Digital Read a una entrada de la compuerta AND y la otra entrada de la compuerta ira conectada con la True Constant que colocamos fuera del While Loop. Después la salida de la compuerta AND la conectaremos a la entrada del led que colocamos. 
+
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/pul7.PNG)
+
+Ahora en el pequeño cuadro verde que se creó entre la conexión del True Constant y la compuerta AND le daremos un clic derecho y le damos clic en Replace with Shift Register
+
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/pul8.png)
+
+Se crearán un bloque de entrada y uno de salida, conectaremos la entrada de la compuerta NOT en el cable de salida del True Constant, y conectamos la salida de la compuerta NOT a la entrada del bloque que se acaba de crear. Por ultimo conectamos la entrada Output Value del bloque Digital Write al cable que esta entre el led y la compuerta AND. 
+
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/pul9.PNG)
+
+Ahora solo falta dar el tiempo de 500 milisegundos, para ello colocamos dentro del While Loop un bloque de Wait Until Next ms Multiple, y a este bloque le creamos una constante de entrada con el valor de 500.
+
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/pul10.PNG)
+
+El programa ya está listo, ahora solo falta probarlo, conectamos el Arduino con el circuito que hicimos antes y cargamos el programa. Seleccionamos en puerto en el Panel frontal.
+
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/pul11.PNG)
+
+Ahora corremos el programa y vemos que al no presionar el botón de la protoboard el led simplemente no prende, ni en el circuito físico ni en el Panel frontal
+
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/pul12.PNG)
+
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/pul13.jpg)
+
+Ahora probamos pulsando el botón y podemos ver que el led del Panel frontal prende, y el led conectado en la protoboard también. 
+
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/pul14.PNG)
+
+![LabVIEW image](https://github.com/FelixGil55/Control-de-Procesos/blob/master/Curso%20LabVIEW%20im%C3%A1genes/pul15.jpg)
 
 
 
